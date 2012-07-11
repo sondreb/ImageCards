@@ -1,0 +1,121 @@
+﻿body {
+    
+    margin: 0px;
+    padding: 0px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    background-color: #151515;
+    
+}
+
+.card {
+    float: left;
+    margin-right: 3px;
+
+            -moz-transition: opacity 0.2s linear;
+        -webkit-transition: opacity 0.2s linear;
+        -o-transition: opacity 0.2s linear;
+        transition: opacity 0.2s linear;
+
+}
+
+    .card span {
+        display: none;
+    }
+
+    .card:hover {
+        opacity: 0.85;
+    }
+
+    
+* {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: -moz-none;
+    -o-user-select: none;
+    user-select: none;
+}
+    
+img {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.image {
+    
+}
+    
+.top {
+}
+
+.bottom {
+    clear: left;
+}
+
+#gameboard {
+    
+    width: 20000px;
+    
+}
+
+.stretch {
+    
+}
+
+.squareTable {
+    
+    background-color: red;
+    
+}
+
+    .squareTable div {
+        height: 50%;
+        background-color: white;
+    }
+
+.square {
+    width: 50%;
+    height: 50%;
+    background-color: blue;
+}
+
+.square:hover {
+    opacity: 0.8;
+}
+
+div.wrapper {
+    float: left;
+    position: relative;
+    margin-right: 3px;
+    overflow: hidden;
+    -moz-transition: opacity 0.2s linear;
+    -webkit-transition: opacity 0.2s linear;
+    -o-transition: opacity 0.2s linear;
+    transition: opacity 0.2s linear;
+}
+
+    div.wrapper:hover {
+        opacity: 0.85;
+    }
+
+div.description {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: black;
+    font-size: 15px;
+    color: white;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+    pointer-events: none;
+}
+
+    div.description:hover {
+    }
+
+p.description_content {
+    padding: 10px;
+    margin: 0px;
+}

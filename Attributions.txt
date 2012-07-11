@@ -1,0 +1,37 @@
+
+Photos Attributions
+
+All photos licensed as CC-BY:
+http://creativecommons.org/licenses/by/2.0/
+
+
+Dog01: Martin L(EuroMagic)
+http://www.flickr.com/photos/euromagic/410071337/
+
+Cat01: Magnus Bråth
+http://www.flickr.com/photos/magnusbrath/5339854150/
+
+Dog02: Magnus Bråth
+http://www.flickr.com/photos/magnusbrath/5343609748/
+
+Cat02: Magnus Bråth
+http://www.flickr.com/photos/magnusbrath/5339239144/
+
+Boat01: Magnus Bråth
+http://www.flickr.com/photos/magnusbrath/5329831173/
+
+Bird01:Magnus Bråth
+http://www.flickr.com/photos/magnusbrath/5328129339/
+
+Dog03: elizabeth tersigni(ETersigni)
+http://www.flickr.com/photos/etersigni/6787786882/
+
+Dog04: John Talbot(jpctalbot)
+http://www.flickr.com/photos/laserstars/3086132328/
+
+Sounds Attributions
+
+dog01.wav: http://www.freesound.org/people/NoiseCollector/sounds/4912/
+dog02.wav: http://www.freesound.org/people/mich3d/sounds/24965/
+dog03.wav: http://www.freesound.org/people/NoiseCollector/sounds/4910/
+

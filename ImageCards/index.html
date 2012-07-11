@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Image Cards Game</title>
+    <meta name = "viewport" content = "width = device-width">
+    <link rel="stylesheet" href="style.css" />
+    <script src="Scripts/jquery-1.7.2.js"></script>
+    <script src="Scripts/knockout-2.1.0.js"></script>
+    <script src="Scripts/game.js"></script>
+</head>
+<body>
+
+    <div id="gameboard" class="stretch">
+        
+        <div data-bind="foreach: TopCards" class="cardsList top">
+            <div class="wrapper" data-bind="click: Select">   
+                <img class="image" data-bind="attr: {src: Url}" />  
+                <div class="description" data-bind="visible: Selected">  
+                    <p class="description_content" data-bind="text: Name"></p>  
+                </div>
+            </div> 
+        </div>
+
+        <div data-bind="foreach: BottomCards" class="cardsList bottom">
+            <div class="wrapper" data-bind="click: Select">   
+                <img class="image" data-bind="attr: {src: Url}" />  
+                <div class="description" data-bind="visible: Selected">  
+                    <p class="description_content" data-bind="text: Name"></p>  
+                </div>
+            </div> 
+        </div>
+
+
+    </div>
+
+
+    <script>
+        $(function () {
+            var vm = new mainViewModel();
+            ko.applyBindings(vm, document.getElementById("gameboard"));
+
+            $('.wrapper').bind('mouseenter', function (source) {
+                //$(this).children(".description").fadeIn(50);
+                //$(this).children(".description").show();
+            }).bind('mouseleave', function (source) {
+
+                //$(this).children(".description").hide();
+                //$(this).children(".description").fadeOut(150);
+            });
+
+
+        });
+
+
+
+
+
+    </script>
+
+    <!--
+    <table class="squareTable stretch" border="1">
+        <tr><td class="square" onclick="">
+            <img class="image" src="Assets/Images/blank.png" />
+            </td><td>
+
+                <div>Card 1</div>
+
+                 </td></tr>
+        <tr>
+            
+            
+            <td>
+
+                <div></div>
+
+            </td><td>
+
+            <div></div>
+
+                     </td></tr>
+    </table>
+    -->
+
+</body>
+</html>
