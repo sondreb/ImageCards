@@ -1,0 +1,18 @@
+﻿CACHE MANIFEST
+# 2012-07-11:v1
+
+index.html
+style.css
+
+Scripts/jquery-1.7.2.js
+Scripts/knockout-2.1.0.js
+Scripts/game.js
+
+Assets/Images/dog01.jpg
+Assets/Images/dog02.jpg
+Assets/Images/dog03.jpg
+Assets/Images/dog04.jpg
+
+Assets/Sounds/dog01.mp3
+Assets/Sounds/dog02.mp3
+Assets/Sounds/dog03.mp3

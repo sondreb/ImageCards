@@ -53,21 +53,25 @@ var card = function (name, id)
 
     self.Name = ko.observable(name);
     self.Id = ko.observable(id);
-    self.Audio = null;
+    //self.Audio = null;
 
     self.Select = function ()
     {
         if (previousCard != null)
         {
             previousCard.Selected(false);
-            previousCard.Audio.pause();
+            //previousCard.Audio.pause();
         }
 
         self.Selected(true);
 
-        self.Audio = new Audio("Assets/Sounds/" + self.Id() + ".wav"); // buffers automatically when created
-        self.Audio.play();
+        var myVideo = document.getElementsByTagName('video')[0];
+        myVideo.src = "Assets/Sounds/" + self.Id() + ".mp3";
+        myVideo.load();
+        myVideo.play();
 
+        //self.Audio = new Audio("Assets/Sounds/" + self.Id() + ".wav"); // buffers automatically when created
+        //self.Audio.play();
 
         previousCard = self;
     }

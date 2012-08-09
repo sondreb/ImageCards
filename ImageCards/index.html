@@ -1,8 +1,13 @@
 ﻿<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html manifest="example.appcache">
 <head>
-    <title>Image Cards Game</title>
-    <meta name = "viewport" content = "width = device-width">
+    <meta charset="utf-8">
+    <title>Image Cards</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
     <link rel="stylesheet" href="style.css" />
     <script src="Scripts/jquery-1.7.2.js"></script>
     <script src="Scripts/knockout-2.1.0.js"></script>
@@ -33,6 +38,7 @@
 
     </div>
 
+    <video style="display: none;"></video>
 
     <script>
         $(function () {
