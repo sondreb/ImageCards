@@ -2,13 +2,14 @@
 <html manifest="example.appcache">
 <head>
     <meta charset="utf-8">
-    <title>Image Cards</title>
+    <title>Image Cards for Kids</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    
-    <link rel="stylesheet" href="style.css" />
+    <meta name="msapplication-tap-highlight" content="no" />
+
+    <link rel="stylesheet" href="/Styles/app.css" />
     <script src="Scripts/jquery-1.7.2.js"></script>
     <script src="Scripts/knockout-2.1.0.js"></script>
     <script src="Scripts/game.js"></script>
@@ -16,6 +17,12 @@
 <body>
 
     <div id="gameboard" class="stretch">
+
+        <div class="tile">
+
+            This is a tile.
+
+        </div>
         
         <div data-bind="foreach: TopCards" class="cardsList top">
             <div class="wrapper" data-bind="click: Select">   

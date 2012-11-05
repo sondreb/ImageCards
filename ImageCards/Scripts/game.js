@@ -25,8 +25,47 @@ $(function () {
     });
 
 
+    var tiles = $(".tile");
+
+    tiles.each(function () {
+        $(this).css("transform-origin", this.offsetLeft * -1 - 24 + "px 50%");
+        $(this).css("transform", "perspective(800px) rotateY(-90deg)");
+    });
+
+    setTimeout(function () {
+        tiles.each(function (idx) { 
+            
+            $(this).css({
+                "transform" : "rotateY(0deg)", 
+                "transition-duration": "1s"
+            });
+        
+        });
+        
+        $(this).bind("transitionend", function () {
+            $(this).css({
+                "transition": "none",
+                "transform-origin": "50% 50%"
+            })
+        });
+        
+        }, 500);
 
 
+    tiles.bind("MSPointerMove MSPointerUp MSPointerCancel", function (event) {
+        switch (event.type)
+        {
+            case "MSPointerUp":
+            case "MSPointerCancel":
+                tiles.each(function () {
+                    $(this).css("transform", "rotate3d(1, 1, 1, 0deg)");
+                });
+                break;
+            case "MSPointerMove":
+                $(this).css("transform", calculateTransform(event.originalEvent.offsetX);
+                break;
+        }
+    });
 
 });
 

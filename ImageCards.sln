@@ -1,28 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "ImageCards", "http://localhost:38058", "{85EDD115-79F3-479C-8146-4B48E546868C}"
-	ProjectSection(WebsiteProperties) = preProject
-		Debug.AspNetCompiler.Debug = "True"
-		Debug.AspNetCompiler.FixedNames = "false"
-		Debug.AspNetCompiler.ForceOverwrite = "true"
-		Debug.AspNetCompiler.PhysicalPath = "..\..\..\GitHub\ImageCards\ImageCards\"
-		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_38058\"
-		Debug.AspNetCompiler.Updateable = "true"
-		Debug.AspNetCompiler.VirtualPath = "/localhost_38058"
-		DefaultWebSiteLanguage = "Visual C#"
-		Release.AspNetCompiler.Debug = "False"
-		Release.AspNetCompiler.FixedNames = "false"
-		Release.AspNetCompiler.ForceOverwrite = "true"
-		Release.AspNetCompiler.PhysicalPath = "..\..\..\GitHub\ImageCards\ImageCards\"
-		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_38058\"
-		Release.AspNetCompiler.Updateable = "true"
-		Release.AspNetCompiler.VirtualPath = "/localhost_38058"
-		SlnRelativePath = "..\..\..\GitHub\ImageCards\ImageCards\"
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
-		UseIISExpress = "true"
-	EndProjectSection
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DAFFE630-E474-4AE5-8C7C-5077C57985D3}"
 	ProjectSection(SolutionItems) = preProject
 		Attributions.txt = Attributions.txt
@@ -30,15 +8,110 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		ReadMe.txt = ReadMe.txt
 	EndProjectSection
 EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "ImageCards", "ImageCards\", "{7C604D0B-0ED7-4365-92FB-15E5A886D6C4}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/ImageCards"
+		Debug.AspNetCompiler.PhysicalPath = "ImageCards\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\ImageCards\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/ImageCards"
+		Release.AspNetCompiler.PhysicalPath = "ImageCards\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\ImageCards\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "1572"
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Windows Phone", "Windows Phone", "{6F8A5145-91D6-4C4E-BDE1-83A2561C7C71}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Android", "Android", "{C4F54C25-9A7B-48E9-A0F7-92D476CA7F6A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Windows", "Windows", "{C98320E3-BABC-4E07-A5A5-7C01DFD73AC3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "iOS", "iOS", "{48B4F931-6E4A-4BBD-B95A-ADF975DC284A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageCards", "Windows Phone\ImageCards\ImageCards.csproj", "{EABE44A2-2A3A-4D56-90E4-D9B3ADA0AB14}"
+EndProject
+Project("{262852C6-CD72-467D-83FE-5EEB1973A190}") = "ImageCards", "Windows\ImageCards\ImageCards.jsproj", "{D28535DA-2E76-4511-8529-8F6948521A3D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Debug|ARM = Debug|ARM
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|ARM = Release|ARM
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{85EDD115-79F3-479C-8146-4B48E546868C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{85EDD115-79F3-479C-8146-4B48E546868C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C604D0B-0ED7-4365-92FB-15E5A886D6C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C604D0B-0ED7-4365-92FB-15E5A886D6C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C604D0B-0ED7-4365-92FB-15E5A886D6C4}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{7C604D0B-0ED7-4365-92FB-15E5A886D6C4}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{7C604D0B-0ED7-4365-92FB-15E5A886D6C4}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{7C604D0B-0ED7-4365-92FB-15E5A886D6C4}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C604D0B-0ED7-4365-92FB-15E5A886D6C4}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{7C604D0B-0ED7-4365-92FB-15E5A886D6C4}.Release|ARM.ActiveCfg = Debug|Any CPU
+		{7C604D0B-0ED7-4365-92FB-15E5A886D6C4}.Release|x64.ActiveCfg = Debug|Any CPU
+		{7C604D0B-0ED7-4365-92FB-15E5A886D6C4}.Release|x86.ActiveCfg = Debug|Any CPU
+		{EABE44A2-2A3A-4D56-90E4-D9B3ADA0AB14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EABE44A2-2A3A-4D56-90E4-D9B3ADA0AB14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EABE44A2-2A3A-4D56-90E4-D9B3ADA0AB14}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{EABE44A2-2A3A-4D56-90E4-D9B3ADA0AB14}.Debug|ARM.ActiveCfg = Debug|ARM
+		{EABE44A2-2A3A-4D56-90E4-D9B3ADA0AB14}.Debug|ARM.Build.0 = Debug|ARM
+		{EABE44A2-2A3A-4D56-90E4-D9B3ADA0AB14}.Debug|ARM.Deploy.0 = Debug|ARM
+		{EABE44A2-2A3A-4D56-90E4-D9B3ADA0AB14}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{EABE44A2-2A3A-4D56-90E4-D9B3ADA0AB14}.Debug|x86.ActiveCfg = Debug|x86
+		{EABE44A2-2A3A-4D56-90E4-D9B3ADA0AB14}.Debug|x86.Build.0 = Debug|x86
+		{EABE44A2-2A3A-4D56-90E4-D9B3ADA0AB14}.Debug|x86.Deploy.0 = Debug|x86
+		{EABE44A2-2A3A-4D56-90E4-D9B3ADA0AB14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EABE44A2-2A3A-4D56-90E4-D9B3ADA0AB14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EABE44A2-2A3A-4D56-90E4-D9B3ADA0AB14}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{EABE44A2-2A3A-4D56-90E4-D9B3ADA0AB14}.Release|ARM.ActiveCfg = Release|ARM
+		{EABE44A2-2A3A-4D56-90E4-D9B3ADA0AB14}.Release|ARM.Build.0 = Release|ARM
+		{EABE44A2-2A3A-4D56-90E4-D9B3ADA0AB14}.Release|ARM.Deploy.0 = Release|ARM
+		{EABE44A2-2A3A-4D56-90E4-D9B3ADA0AB14}.Release|x64.ActiveCfg = Release|Any CPU
+		{EABE44A2-2A3A-4D56-90E4-D9B3ADA0AB14}.Release|x86.ActiveCfg = Release|x86
+		{EABE44A2-2A3A-4D56-90E4-D9B3ADA0AB14}.Release|x86.Build.0 = Release|x86
+		{EABE44A2-2A3A-4D56-90E4-D9B3ADA0AB14}.Release|x86.Deploy.0 = Release|x86
+		{D28535DA-2E76-4511-8529-8F6948521A3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D28535DA-2E76-4511-8529-8F6948521A3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D28535DA-2E76-4511-8529-8F6948521A3D}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{D28535DA-2E76-4511-8529-8F6948521A3D}.Debug|ARM.ActiveCfg = Debug|ARM
+		{D28535DA-2E76-4511-8529-8F6948521A3D}.Debug|ARM.Build.0 = Debug|ARM
+		{D28535DA-2E76-4511-8529-8F6948521A3D}.Debug|ARM.Deploy.0 = Debug|ARM
+		{D28535DA-2E76-4511-8529-8F6948521A3D}.Debug|x64.ActiveCfg = Debug|x64
+		{D28535DA-2E76-4511-8529-8F6948521A3D}.Debug|x64.Build.0 = Debug|x64
+		{D28535DA-2E76-4511-8529-8F6948521A3D}.Debug|x64.Deploy.0 = Debug|x64
+		{D28535DA-2E76-4511-8529-8F6948521A3D}.Debug|x86.ActiveCfg = Debug|x86
+		{D28535DA-2E76-4511-8529-8F6948521A3D}.Debug|x86.Build.0 = Debug|x86
+		{D28535DA-2E76-4511-8529-8F6948521A3D}.Debug|x86.Deploy.0 = Debug|x86
+		{D28535DA-2E76-4511-8529-8F6948521A3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D28535DA-2E76-4511-8529-8F6948521A3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D28535DA-2E76-4511-8529-8F6948521A3D}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{D28535DA-2E76-4511-8529-8F6948521A3D}.Release|ARM.ActiveCfg = Release|ARM
+		{D28535DA-2E76-4511-8529-8F6948521A3D}.Release|ARM.Build.0 = Release|ARM
+		{D28535DA-2E76-4511-8529-8F6948521A3D}.Release|ARM.Deploy.0 = Release|ARM
+		{D28535DA-2E76-4511-8529-8F6948521A3D}.Release|x64.ActiveCfg = Release|x64
+		{D28535DA-2E76-4511-8529-8F6948521A3D}.Release|x64.Build.0 = Release|x64
+		{D28535DA-2E76-4511-8529-8F6948521A3D}.Release|x64.Deploy.0 = Release|x64
+		{D28535DA-2E76-4511-8529-8F6948521A3D}.Release|x86.ActiveCfg = Release|x86
+		{D28535DA-2E76-4511-8529-8F6948521A3D}.Release|x86.Build.0 = Release|x86
+		{D28535DA-2E76-4511-8529-8F6948521A3D}.Release|x86.Deploy.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EABE44A2-2A3A-4D56-90E4-D9B3ADA0AB14} = {6F8A5145-91D6-4C4E-BDE1-83A2561C7C71}
+		{D28535DA-2E76-4511-8529-8F6948521A3D} = {C98320E3-BABC-4E07-A5A5-7C01DFD73AC3}
 	EndGlobalSection
 EndGlobal
