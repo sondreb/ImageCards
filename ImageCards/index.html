@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
-<html manifest="example.appcache">
+<html>
+<!--<html manifest="example.appcache">-->
 <head>
     <meta charset="utf-8">
     <title>Image Cards for Kids</title>
@@ -9,50 +10,71 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="msapplication-tap-highlight" content="no" />
 
-    <link rel="stylesheet" href="/Styles/app.css" />
+    <link rel="stylesheet" href="Styles/base.css" />
+    <link rel="stylesheet" href="Styles/app.css" />
     <script src="Scripts/jquery-1.7.2.js"></script>
     <script src="Scripts/knockout-2.1.0.js"></script>
     <script src="Scripts/game.js"></script>
 </head>
 <body>
 
-    <div id="gameboard" class="stretch">
+    <div id="gameboard">
 
+<!--        <div id="tiles">
         <div class="tile">
-
             This is a tile.
-
+        </div><div class="tile">
+            This is a tile.
+        </div><div class="tile">
+            This is a tile.
+        </div><div class="tile">
+            This is a tile.
+        </div><div class="tile">
+            This is a tile.
         </div>
-        
-        <div data-bind="foreach: TopCards" class="cardsList top">
-            <div class="wrapper" data-bind="click: Select">   
-                <img class="image" data-bind="attr: {src: Url}" />  
-                <div class="description" data-bind="visible: Selected">  
-                    <p class="description_content" data-bind="text: Name"></p>  
-                </div>
+            </div>
+        -->
+
+        <div data-bind="foreach: Cards" id="tiles">
+            <div class="tile_narrow" data-bind="click: Select, style: { 'background-image': Url() }"> 
+                <span data-bind="text: Name"></span>
             </div> 
         </div>
-
-        <div data-bind="foreach: BottomCards" class="cardsList bottom">
-            <div class="wrapper" data-bind="click: Select">   
-                <img class="image" data-bind="attr: {src: Url}" />  
-                <div class="description" data-bind="visible: Selected">  
-                    <p class="description_content" data-bind="text: Name"></p>  
-                </div>
-            </div> 
-        </div>
-
+         
+        <div class="tile_wide" data-bind="click: About"><span>About Image Cards</span></div>
 
     </div>
 
     <video style="display: none;"></video>
+    <audio style="display: none;"></audio>
+
+    <div id="about">
+        <div>
+        <img src="Assets/Icons/back.png" data-bind="click: About" class="icon" />
+
+        <h1>Image Cards for Kids</h1>
+
+        <p>by:</p>
+        <img src="Assets/brain.png" />
+
+        <p>For more games, visit www.brain.no</p>
+        <p>For your kids' protection, our apps for kids will not contain ads or links.</p>
+
+            <p>Attributions:</p>
+            <p>
+                Martin L(EuroMagic), Magnus Bråth, elizabeth tersigni(ETersigni), John Talbot(jpctalbot),
+                NoiseCollector, mich3d.
+            </p>
+            <p>All content used under Creative Commons Attribution. For complete attribution, visit brain.no</p>
+        </div>
+    </div>
 
     <script>
         $(function () {
             var vm = new mainViewModel();
-            ko.applyBindings(vm, document.getElementById("gameboard"));
+            ko.applyBindings(vm, document.body);
 
-            $('.wrapper').bind('mouseenter', function (source) {
+            $('.tile').bind('mouseenter', function (source) {
                 //$(this).children(".description").fadeIn(50);
                 //$(this).children(".description").show();
             }).bind('mouseleave', function (source) {

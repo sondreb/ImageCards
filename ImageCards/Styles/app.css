@@ -1,4 +1,4 @@
-﻿@media all and (orientation:portrait) {
+﻿/*@media all and (orientation:portrait) {
     @-ms-viewport {
         width:320px;
         user-zoom: fixed;
@@ -14,28 +14,118 @@
         max-zoom: 1;
         min-zoom: 1;
     }
+}*/
+
+
+/* The normal viewport is 480 (WVGA, 800x480), let it scale on WXGA */
+@media all and (orientation:portrait) {
+    @-ms-viewport {
+        width:480px;
+        user-zoom: fixed;
+        max-zoom: 1;
+        min-zoom: 1;
+    }
 }
+
+
 
 body {
     font-size: 11pt;
     font-family: "Segoe WP";
     letter-spacing: 0.02em;
-    background-color: #000000;
     background-color: Background;
     color: #ffffff;
     margin-left: 24px;
+    margin-top: 24px;
+    background-size: 100%;
 }
 
 #page-title {
     font-size: 24pt;
 }
 
-.tile {
+h1 {
+    margin: 0px;
+    padding: 0px;
+}
+
+.icon {
+    background-image: url(../Assets/Icons/basecircle.png);
+    background-size: 100%;
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+}
+
+.tile_wide {
     background-color: Highlight;
-    width: 180px;
-    height: 180px;
-    font-size: 16pt;
+    width: 432px;
+    height: 210px;
+    font-size: 32pt;
     text-align: center;
     color: HighlightText;
     -ms-touch-action: pan-y;
+    margin-bottom: 10px;
+    background-size: 100%;
+    cursor: pointer;
+    display: table;
 }
+
+.tile_narrow {
+    background-color: Highlight;
+    width: 210px;
+    height: 210px;
+    font-size: 32pt;
+    text-align: center;
+    color: HighlightText;
+    -ms-touch-action: pan-y;
+    margin-bottom: 10px;
+    background-size: 100%;
+    cursor: pointer;
+    display: table;
+}
+
+    .tile_narrow span, .tile_wide span {
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    .tile_narrow img {
+        width: 210px;
+        height: 210px;
+    }
+
+#tiles {
+    display: -ms-flexbox;
+    -ms-flex-wrap: wrap;
+    -ms-flex-pack: justify;
+    width: 432px;
+}
+
+#tiles {
+    transition-property: top,width,height;
+    transition-duration: .5s;
+    transition-delay: .1s;
+}
+
+#about {
+
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 100;
+    background-color: black;
+    color: white;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    font-size: 16pt;
+    display: none;
+}
+
+    #about div {
+        margin-left: 24px;
+        margin-top: 24px;
+    }

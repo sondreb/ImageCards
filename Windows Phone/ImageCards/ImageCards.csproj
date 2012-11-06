@@ -126,20 +126,41 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="..\..\ImageCards\Assets\brain.png">
+      <Link>Assets\brain.png</Link>
+    </Content>
+    <Content Include="..\..\ImageCards\Assets\Icons\back.png">
+      <Link>Assets\Icons\back.png</Link>
+    </Content>
+    <Content Include="..\..\ImageCards\Assets\Icons\basecircle.png">
+      <Link>Assets\Icons\basecircle.png</Link>
+    </Content>
     <Content Include="..\..\ImageCards\Assets\Images\bird01.jpg">
       <Link>Assets\Images\bird01.jpg</Link>
     </Content>
+    <Content Include="..\..\ImageCards\Assets\Images\bird02.jpg">
+      <Link>Assets\Images\bird02.jpg</Link>
+    </Content>
+    <Content Include="..\..\ImageCards\Assets\Images\bird03.jpg">
+      <Link>Assets\Images\bird03.jpg</Link>
+    </Content>
+    <Content Include="..\..\ImageCards\Assets\Images\bird04.jpg">
+      <Link>Assets\Images\bird04.jpg</Link>
+    </Content>
     <Content Include="..\..\ImageCards\Assets\Images\blank.png">
       <Link>Assets\Images\blank.png</Link>
-    </Content>
-    <Content Include="..\..\ImageCards\Assets\Images\boat01.jpg">
-      <Link>Assets\Images\boat01.jpg</Link>
     </Content>
     <Content Include="..\..\ImageCards\Assets\Images\cat01.jpg">
       <Link>Assets\Images\cat01.jpg</Link>
     </Content>
     <Content Include="..\..\ImageCards\Assets\Images\cat02.jpg">
       <Link>Assets\Images\cat02.jpg</Link>
+    </Content>
+    <Content Include="..\..\ImageCards\Assets\Images\cat03.jpg">
+      <Link>Assets\Images\cat03.jpg</Link>
+    </Content>
+    <Content Include="..\..\ImageCards\Assets\Images\cat04.jpg">
+      <Link>Assets\Images\cat04.jpg</Link>
     </Content>
     <Content Include="..\..\ImageCards\Assets\Images\dog01.jpg">
       <Link>Assets\Images\dog01.jpg</Link>
@@ -152,6 +173,24 @@
     </Content>
     <Content Include="..\..\ImageCards\Assets\Images\dog04.jpg">
       <Link>Assets\Images\dog04.jpg</Link>
+    </Content>
+    <Content Include="..\..\ImageCards\Assets\Images\mouse01.jpg">
+      <Link>Assets\Images\mouse01.jpg</Link>
+    </Content>
+    <Content Include="..\..\ImageCards\Assets\Images\mouse02.jpg">
+      <Link>Assets\Images\mouse02.jpg</Link>
+    </Content>
+    <Content Include="..\..\ImageCards\Assets\Images\mouse03.jpg">
+      <Link>Assets\Images\mouse03.jpg</Link>
+    </Content>
+    <Content Include="..\..\ImageCards\Assets\Images\turtle01.jpg">
+      <Link>Assets\Images\turtle01.jpg</Link>
+    </Content>
+    <Content Include="..\..\ImageCards\Assets\Images\turtle02.jpg">
+      <Link>Assets\Images\turtle02.jpg</Link>
+    </Content>
+    <Content Include="..\..\ImageCards\Assets\Images\turtle03.jpg">
+      <Link>Assets\Images\turtle03.jpg</Link>
     </Content>
     <Content Include="..\..\ImageCards\Assets\Sounds\dog01.mp3">
       <Link>Assets\Sounds\dog01.mp3</Link>
@@ -201,9 +240,15 @@
     <Content Include="Assets\Tiles\FlipCycleTileMedium.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Assets\Tiles\FlipCycleTileMedium1.png" />
+    <Content Include="Assets\Tiles\FlipCycleTileMedium2.png" />
+    <Content Include="Assets\Tiles\FlipCycleTileMedium3.png" />
+    <Content Include="Assets\Tiles\FlipCycleTileMedium4.png" />
+    <Content Include="Assets\Tiles\FlipCycleTileMedium5.png" />
     <Content Include="Assets\Tiles\FlipCycleTileSmall.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Assets\Tiles\FlipCycleTileSmall5.png" />
     <Content Include="Assets\Tiles\IconicTileMediumLarge.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

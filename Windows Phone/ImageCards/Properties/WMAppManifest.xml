@@ -4,13 +4,9 @@
   <Languages xmlns="">
     <Language code="nb" />
   </Languages>
-  <App xmlns="" ProductID="{eabe44a2-2a3a-4d56-90e4-d9b3ada0ab14}" Title="Image Cards for Kids" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="brain.no" Description="Simple and fun game for the smallest children. Displays square cards that turns around when touched, to reveal the name and plays a sound." Publisher="brain.no" PublisherID="{971d5b70-f6e8-46c2-88c4-6917ca3595c1}">
+  <App xmlns="" ProductID="{eabe44a2-2a3a-4d56-90e4-d9b3ada0ab14}" Title="Image Cards for Kids" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="brain.no" Description="Simple and fun game for the smallest children. Displays tiles that turns around when touched, to reveal the a photo, the name and plays a sound of different animals." Publisher="brain.no" PublisherID="{971d5b70-f6e8-46c2-88c4-6917ca3595c1}">
     <IconPath IsRelative="true" IsResource="false">Assets\ApplicationIcon.png</IconPath>
     <Capabilities>
-      <Capability Name="ID_CAP_NETWORKING" />
-      <Capability Name="ID_CAP_MEDIALIB_AUDIO" />
-      <Capability Name="ID_CAP_MEDIALIB_PLAYBACK" />
-      <Capability Name="ID_CAP_SENSORS" />
       <Capability Name="ID_CAP_WEBBROWSERCOMPONENT" />
     </Capabilities>
     <Tasks>
@@ -18,28 +14,27 @@
     </Tasks>
     <Tokens>
       <PrimaryToken TokenID="ImageCardsToken" TaskName="_default">
-        <TemplateFlip>
-          <SmallImageURI IsRelative="true" IsResource="false">
-          </SmallImageURI>
-          <Count>0</Count>
-          <BackgroundImageURI IsRelative="true" IsResource="false">
-          </BackgroundImageURI>
+        <TemplateCycle>
+          <SmallImageURI IsRelative="true" IsResource="false">Assets\Tiles\FlipCycleTileSmall5.png</SmallImageURI>
           <Title>Image Cards for Kids</Title>
-          <BackContent>
-          </BackContent>
-          <BackBackgroundImageURI IsRelative="true" IsResource="false">
-          </BackBackgroundImageURI>
-          <BackTitle>
-          </BackTitle>
-          <LargeBackgroundImageURI IsRelative="true" IsResource="false">
-          </LargeBackgroundImageURI>
-          <LargeBackContent />
-          <LargeBackBackgroundImageURI IsRelative="true" IsResource="false">
-          </LargeBackBackgroundImageURI>
+          <Photo01ImageURI IsRelative="true" IsResource="false">Assets\Tiles\FlipCycleTileMedium1.png</Photo01ImageURI>
+          <Photo02ImageURI IsRelative="true" IsResource="false">Assets\Tiles\FlipCycleTileMedium2.png</Photo02ImageURI>
+          <Photo03ImageURI IsRelative="true" IsResource="false">Assets\Tiles\FlipCycleTileMedium3.png</Photo03ImageURI>
+          <Photo04ImageURI IsRelative="true" IsResource="false">Assets\Tiles\FlipCycleTileMedium4.png</Photo04ImageURI>
+          <Photo05ImageURI IsRelative="true" IsResource="false">Assets\Tiles\FlipCycleTileMedium5.png</Photo05ImageURI>
+          <Photo06ImageURI IsRelative="true" IsResource="false">
+          </Photo06ImageURI>
+          <Photo07ImageURI IsRelative="true" IsResource="false">
+          </Photo07ImageURI>
+          <Photo08ImageURI IsRelative="true" IsResource="false">
+          </Photo08ImageURI>
+          <Photo09ImageURI IsRelative="true" IsResource="false">
+          </Photo09ImageURI>
+          <Count>0</Count>
+          <HasLarge>false</HasLarge>
           <DeviceLockImageURI IsRelative="true" IsResource="false">
           </DeviceLockImageURI>
-          <HasLarge>True</HasLarge>
-        </TemplateFlip>
+        </TemplateCycle>
       </PrimaryToken>
     </Tokens>
     <ScreenResolutions>

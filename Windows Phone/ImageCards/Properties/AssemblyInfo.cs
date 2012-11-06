@@ -6,11 +6,11 @@ using System.Resources;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Image Cards")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("Image Cards for Kids")]
+[assembly: AssemblyDescription("Simple game for kids with tiles turning with image and sounds of animals.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("brain.no")]
-[assembly: AssemblyProduct("ImageCards")]
+[assembly: AssemblyProduct("Image Cards for Kids")]
 [assembly: AssemblyCopyright("Copyright © brain.no 2012")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
