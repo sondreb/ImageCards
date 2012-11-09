@@ -1,4 +1,6 @@
-﻿body {
+﻿@import url('//Microsoft.WinJS.1.0/css/ui-dark.css');
+
+body {
 }
 
 @media screen and (-ms-view-state: fullscreen-landscape) {
@@ -11,4 +13,18 @@
 }
 
 @media screen and (-ms-view-state: fullscreen-portrait) {
+}
+
+
+#gameboard, #about {
+    margin: 50px;
+    background-color: transparent;
+}
+
+#tiles {
+    margin-top: 20px;
+}
+
+.brain {
+    float: right;
 }

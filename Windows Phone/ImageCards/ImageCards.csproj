@@ -213,8 +213,11 @@
     <Content Include="..\..\ImageCards\index.html">
       <Link>index.html</Link>
     </Content>
-    <Content Include="..\..\ImageCards\Scripts\game.js">
-      <Link>Scripts\game.js</Link>
+    <Content Include="..\..\ImageCards\Scripts\app.js">
+      <Link>Scripts\app.js</Link>
+    </Content>
+    <Content Include="..\..\ImageCards\Scripts\base.js">
+      <Link>Scripts\base.js</Link>
     </Content>
     <Content Include="..\..\ImageCards\Scripts\jquery-1.7.2.js">
       <Link>Scripts\jquery-1.7.2.js</Link>
@@ -266,9 +269,7 @@
       <LastGenOutput>AppResources.nb-NO.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Html\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).$(TargetFrameworkVersion).Overrides.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

@@ -3,7 +3,7 @@
 $(function () {
 
     $("img").one('load', function () {
-        
+
     }).each(function () {
         if (this.complete) $(this).load();
     });
@@ -14,7 +14,6 @@ $(function () {
         return false;
     });
 
-
     var tiles = $(".tile_narrow");
 
     //tiles.each(function () {
@@ -24,21 +23,21 @@ $(function () {
 
     //setTimeout(function () {
     //    tiles.each(function (idx) { 
-            
+
     //        $(this).css({
     //            "transform" : "rotateY(0deg)", 
     //            "transition-duration": "1s"
     //        });
-        
+
     //    });
-        
+
     //    $(this).bind("transitionend", function () {
     //        $(this).css({
     //            "transition": "none",
     //            "transform-origin": "50% 50%"
     //        })
     //    });
-        
+
     //    }, 500);
 
 
@@ -61,16 +60,13 @@ $(function () {
 
 var previousCard = null;
 
-var card = function (name, id)
-{
+var card = function (name, id) {
     var self = this;
     self._name = name;
     self.Id = ko.observable(id);
 
-    self.Select = function (event)
-    {
-        if (previousCard != null)
-        {
+    self.Select = function (event) {
+        if (previousCard != null) {
             previousCard.Selected(false);
         }
 
@@ -113,8 +109,7 @@ var card = function (name, id)
 
 }
 
-function populateCards()
-{
+function populateCards() {
     var cards = new Array();
 
     cards[0] = new card("Dog", "dog01");
@@ -152,22 +147,18 @@ function arrayShuffle(theArray) {
     }
 };
 
-var mainViewModel = function ()
-{
+var mainViewModel = function () {
     var self = this;
 
     self.PreviousCard = null;
     self.Cards = ko.observableArray(populateCards());
 
-    self.About = function ()
-    {
-        if ($("#about").is(":visible"))
-        {
+    self.About = function () {
+        if ($("#about").is(":visible")) {
             $("#about").hide();
             $("#gameboard").fadeIn();
         }
-        else
-        {
+        else {
             $("#gameboard").hide();
             $("#about").fadeIn();
         }

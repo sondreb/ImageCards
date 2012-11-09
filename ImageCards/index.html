@@ -10,16 +10,25 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="msapplication-tap-highlight" content="no" />
 
+    <!-- WinJS references, will fail on phones with a 404. -->
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
     <link rel="stylesheet" href="Styles/base.css" />
     <link rel="stylesheet" href="Styles/app.css" />
+
     <script src="Scripts/jquery-1.7.2.js"></script>
     <script src="Scripts/knockout-2.1.0.js"></script>
-    <script src="Scripts/game.js"></script>
+    <script src="Scripts/base.js"></script>
+    <script src="Scripts/app.js"></script>
 </head>
 <body>
 
     <div id="gameboard">
 
+        <img class="brain" src="/Assets/brain.png" />
+        <h1>Image Cards for Kids</h1>
+        
 <!--        <div id="tiles">
         <div class="tile">
             This is a tile.
