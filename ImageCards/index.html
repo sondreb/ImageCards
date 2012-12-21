@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>Image Cards for Kids</title>
-    
+
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -21,37 +21,34 @@
     <script src="Scripts/knockout-2.1.0.js"></script>
     <script src="Scripts/base.js"></script>
     <script src="Scripts/app.js"></script>
+
+    <style type="text/css">
+        .flex {
+            display: -ms-flexbox;
+            -ms-flex-wrap: wrap;
+        }
+    </style>
 </head>
 <body>
 
     <div id="gameboard">
 
-        <img class="brain" src="/Assets/brain.png" />
+        <!--<img class="brain" src="Assets/brain.png" />-->
         <h1>Image Cards for Kids</h1>
-        
-<!--        <div id="tiles">
-        <div class="tile">
-            This is a tile.
-        </div><div class="tile">
-            This is a tile.
-        </div><div class="tile">
-            This is a tile.
-        </div><div class="tile">
-            This is a tile.
-        </div><div class="tile">
-            This is a tile.
-        </div>
-            </div>
-        -->
 
-        <div data-bind="foreach: Cards" id="tiles">
-            <div class="tile_narrow" data-bind="click: Select, style: { 'background-image': Url() }"> 
+        <ul class="flex" data-bind="foreach: Cards">
+            <li class="tile_narrow tile animated" data-bind="click: Select, style: { 'background-image': Url() }">
                 <span data-bind="text: Name"></span>
-            </div> 
-        </div>
-         
-        <div class="tile_wide" data-bind="click: About"><span>About Image Cards</span></div>
+            </li>
+        </ul>
 
+        <!--       <div data-bind="foreach: Cards" id="tiles" style="-ms-flex-wrap: wrap">
+            <div class="tile_narrow" data-bind="click: Select, style: { 'background-image': Url() }">
+                <span data-bind="text: Name"></span>
+            </div>
+        </div>-->
+
+        <div class="tile_wide" data-bind="click: About"><span>About Image Cards</span></div>
     </div>
 
     <video style="display: none;"></video>
@@ -59,15 +56,15 @@
 
     <div id="about">
         <div>
-        <img src="Assets/Icons/back.png" data-bind="click: About" class="icon" />
+            <img data-bind="click: About, attr: { src: BackIconUrl }, style: { 'background-image': BackIconBackgroundUrl() }" class="icon" />
 
-        <h1>Image Cards for Kids</h1>
+            <h1>Image Cards for Kids</h1>
 
-        <p>by:</p>
-        <img src="Assets/brain.png" />
+            <p>by:</p>
+            <img data-bind="attr: {src: LogoUrl}" />
 
-        <p>For more games, visit www.brain.no</p>
-        <p>For your kids' protection, our apps for kids will not contain ads or links.</p>
+            <p>For more games, visit www.brain.no</p>
+            <p>For your kids' protection, our apps for kids will not contain ads or links.</p>
 
             <p>Attributions:</p>
             <p>
@@ -80,7 +77,10 @@
 
     <script>
         $(function () {
+
             var vm = new mainViewModel();
+            mainViewModel = vm;
+
             ko.applyBindings(vm, document.body);
 
             $('.tile').bind('mouseenter', function (source) {
@@ -92,13 +92,7 @@
                 //$(this).children(".description").fadeOut(150);
             });
 
-
         });
-
-
-
-
-
     </script>
 
     <!--
@@ -108,22 +102,17 @@
             </td><td>
 
                 <div>Card 1</div>
-
                  </td></tr>
         <tr>
-            
-            
+
             <td>
 
                 <div></div>
-
             </td><td>
 
             <div></div>
-
                      </td></tr>
     </table>
     -->
-
 </body>
 </html>

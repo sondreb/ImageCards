@@ -11,16 +11,24 @@ body {
 
     overflow-x: hidden;
     overflow-y: auto;
-    background-color: #151515;
-
     font-size: 11pt;
     font-family: "Segoe WP";
     letter-spacing: 0.02em;
     background-color: Background;
-    color: #ffffff;
+    color: white;
+    margin: 0px;
     margin-left: 24px;
     margin-top: 24px;
     background-size: 100%;
+}
+
+.icon {
+    /*filter: invert !important;*/
+}
+
+ul, li {
+    margin: 0px;
+    padding: 0px;
 }
 
 #page-title {
@@ -28,8 +36,8 @@ body {
 }
 
 h1 {
-    margin: 0px;
     padding: 0px;
+    margin: 10px;
 }
 
 .icon {
@@ -39,6 +47,39 @@ h1 {
     height: 48px;
     cursor: pointer;
 }
+
+.tile {
+  
+	/*-webkit-mask-image: -webkit-linear-gradient(#000, rgba(0,0,0,.9));
+	
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	-o-backface-visibility: hidden;
+	backface-visibility: hidden;
+	
+	-webkit-animation-duration: 1s;
+	-webkit-animation-delay: .2s;
+	-webkit-animation-timing-function: ease;
+	-webkit-animation-fill-mode: both;
+	-moz-animation-duration: 1s;
+	-moz-animation-delay: .2s;
+	-moz-animation-timing-function: ease;
+	-moz-animation-fill-mode: both;
+	-ms-animation-duration: 1s;
+	-ms-animation-delay: .2s;
+	-ms-animation-timing-function: ease;
+	-ms-animation-fill-mode: both;
+	-o-animation-duration: 1s;
+	-o-animation-delay: .2s;
+	-o-animation-timing-function: ease;
+	-o-animation-fill-mode: both;
+	animation-duration: 1s;
+	animation-delay: .2s;
+	animation-timing-function: ease;
+	animation-fill-mode: both;*/
+}
+
 
 .tile_wide {
     background-color: Highlight;
@@ -63,6 +104,7 @@ h1 {
     color: HighlightText;
     -ms-touch-action: pan-y;
     margin-bottom: 10px;
+    margin-right: 10px;
     background-size: 100%;
     cursor: pointer;
     display: table;
@@ -72,14 +114,17 @@ h1 {
         display: table-cell;
         text-align: center;
         vertical-align: middle;
+        opacity: 0.9;
     }
+
+    
 
     .tile_narrow img {
         width: 210px;
         height: 210px;
     }
 
-#tiles {
+/*#tiles {
     display: -ms-flexbox;
     -ms-flex-wrap: wrap;
     -ms-flex-pack: justify;
@@ -90,7 +135,7 @@ h1 {
     transition-property: top,width,height;
     transition-duration: .5s;
     transition-delay: .1s;
-}
+}*/
 
 #about {
 
@@ -98,8 +143,7 @@ h1 {
     height: 100%;
     position: absolute;
     z-index: 100;
-    background-color: black;
-    color: white;
+    background-color: Background;
     top: 0px;
     left: 0px;
     right: 0px;
@@ -112,7 +156,6 @@ h1 {
         margin-left: 24px;
         margin-top: 24px;
     }
-
 
 
 
@@ -228,3 +271,172 @@ p.description_content {
     padding: 10px;
     margin: 0px;
 }*/
+
+
+
+/*
+Animate.css - http://daneden.me/animate
+LICENSED UNDER THE  MIT LICENSE (MIT)
+
+Copyright (c) 2012 Dan Eden
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+*/
+
+.animated {
+	-webkit-animation-fill-mode: both;
+	-moz-animation-fill-mode: both;
+	-ms-animation-fill-mode: both;
+	-o-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-duration: 1s;
+	-moz-animation-duration: 1s;
+	-ms-animation-duration: 1s;
+	-o-animation-duration: 1s;
+	animation-duration: 1s;
+}
+
+.animated.hinge {
+	-webkit-animation-duration: 2s;
+	-moz-animation-duration: 2s;
+	-ms-animation-duration: 2s;
+	-o-animation-duration: 2s;
+	animation-duration: 2s;
+}
+
+@-webkit-keyframes flip {
+	0% {
+		-webkit-transform: perspective(400px) rotateY(0);
+		-webkit-animation-timing-function: ease-out;
+	}
+	40% {
+		-webkit-transform: perspective(400px) translateZ(150px) rotateY(170deg);
+		-webkit-animation-timing-function: ease-out;
+	}
+	50% {
+		-webkit-transform: perspective(400px) translateZ(150px) rotateY(190deg) scale(1);
+		-webkit-animation-timing-function: ease-in;
+	}
+	80% {
+		-webkit-transform: perspective(400px) rotateY(360deg) scale(.95);
+		-webkit-animation-timing-function: ease-in;
+	}
+	100% {
+		-webkit-transform: perspective(400px) scale(1);
+		-webkit-animation-timing-function: ease-in;
+	}
+}
+@-moz-keyframes flip {
+	0% {
+		-moz-transform: perspective(400px) rotateY(0);
+		-moz-animation-timing-function: ease-out;
+	}
+	40% {
+		-moz-transform: perspective(400px) translateZ(150px) rotateY(170deg);
+		-moz-animation-timing-function: ease-out;
+	}
+	50% {
+		-moz-transform: perspective(400px) translateZ(150px) rotateY(190deg) scale(1);
+		-moz-animation-timing-function: ease-in;
+	}
+	80% {
+		-moz-transform: perspective(400px) rotateY(360deg) scale(.95);
+		-moz-animation-timing-function: ease-in;
+	}
+	100% {
+		-moz-transform: perspective(400px) scale(1);
+		-moz-animation-timing-function: ease-in;
+	}
+}
+@-o-keyframes flip {
+	0% {
+		-o-transform: perspective(400px) rotateY(0);
+		-o-animation-timing-function: ease-out;
+	}
+	40% {
+		-o-transform: perspective(400px) translateZ(150px) rotateY(170deg);
+		-o-animation-timing-function: ease-out;
+	}
+	50% {
+		-o-transform: perspective(400px) translateZ(150px) rotateY(190deg) scale(1);
+		-o-animation-timing-function: ease-in;
+	}
+	80% {
+		-o-transform: perspective(400px) rotateY(360deg) scale(.95);
+		-o-animation-timing-function: ease-in;
+	}
+	100% {
+		-o-transform: perspective(400px) scale(1);
+		-o-animation-timing-function: ease-in;
+	}
+}
+@keyframes flip {
+	0% {
+		transform: perspective(400px) rotateY(0);
+		animation-timing-function: ease-out;
+	}
+	40% {
+		transform: perspective(400px) translateZ(150px) rotateY(170deg);
+		animation-timing-function: ease-out;
+	}
+	50% {
+		transform: perspective(400px) translateZ(150px) rotateY(190deg) scale(1);
+		animation-timing-function: ease-in;
+	}
+	80% {
+		transform: perspective(400px) rotateY(360deg) scale(.95);
+		animation-timing-function: ease-in;
+	}
+	100% {
+		transform: perspective(400px) scale(1);
+		animation-timing-function: ease-in;
+	}
+}
+
+.flip {
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-backface-visibility: visible !important;
+	-webkit-animation-name: flip;
+	-moz-backface-visibility: visible !important;
+	-moz-animation-name: flip;
+	-o-backface-visibility: visible !important;
+	-o-animation-name: flip;
+	backface-visibility: visible !important;
+	animation-name: flip;
+}
+
+
+
+@-webkit-keyframes fadeIn {
+	0% {opacity: 0;}	
+	100% {opacity: 1;}
+}
+
+@-moz-keyframes fadeIn {
+	0% {opacity: 0;}	
+	100% {opacity: 1;}
+}
+
+@-o-keyframes fadeIn {
+	0% {opacity: 0;}	
+	100% {opacity: 1;}
+}
+
+@keyframes fadeIn {
+	0% {opacity: 0;}	
+	100% {opacity: 1;}
+}
+
+.fadeIn {
+	-webkit-animation-name: fadeIn;
+	-moz-animation-name: fadeIn;
+	-o-animation-name: fadeIn;
+	animation-name: fadeIn;
+}

@@ -56,69 +56,6 @@
     <Content Include="..\..\ImageCards\Assets\brain.png">
       <Link>Assets\brain.png</Link>
     </Content>
-    <Content Include="..\..\ImageCards\Assets\Icons\back.png">
-      <Link>Assets\Icons\back.png</Link>
-    </Content>
-    <Content Include="..\..\ImageCards\Assets\Icons\basecircle.png">
-      <Link>Assets\Icons\basecircle.png</Link>
-    </Content>
-    <Content Include="..\..\ImageCards\Assets\Images\bird01.jpg">
-      <Link>Assets\Images\bird01.jpg</Link>
-    </Content>
-    <Content Include="..\..\ImageCards\Assets\Images\bird02.jpg">
-      <Link>Assets\Images\bird02.jpg</Link>
-    </Content>
-    <Content Include="..\..\ImageCards\Assets\Images\bird03.jpg">
-      <Link>Assets\Images\bird03.jpg</Link>
-    </Content>
-    <Content Include="..\..\ImageCards\Assets\Images\bird04.jpg">
-      <Link>Assets\Images\bird04.jpg</Link>
-    </Content>
-    <Content Include="..\..\ImageCards\Assets\Images\blank.png">
-      <Link>Assets\Images\blank.png</Link>
-    </Content>
-    <Content Include="..\..\ImageCards\Assets\Images\cat01.jpg">
-      <Link>Assets\Images\cat01.jpg</Link>
-    </Content>
-    <Content Include="..\..\ImageCards\Assets\Images\cat02.jpg">
-      <Link>Assets\Images\cat02.jpg</Link>
-    </Content>
-    <Content Include="..\..\ImageCards\Assets\Images\cat03.jpg">
-      <Link>Assets\Images\cat03.jpg</Link>
-    </Content>
-    <Content Include="..\..\ImageCards\Assets\Images\cat04.jpg">
-      <Link>Assets\Images\cat04.jpg</Link>
-    </Content>
-    <Content Include="..\..\ImageCards\Assets\Images\dog01.jpg">
-      <Link>Assets\Images\dog01.jpg</Link>
-    </Content>
-    <Content Include="..\..\ImageCards\Assets\Images\dog02.jpg">
-      <Link>Assets\Images\dog02.jpg</Link>
-    </Content>
-    <Content Include="..\..\ImageCards\Assets\Images\dog03.jpg">
-      <Link>Assets\Images\dog03.jpg</Link>
-    </Content>
-    <Content Include="..\..\ImageCards\Assets\Images\dog04.jpg">
-      <Link>Assets\Images\dog04.jpg</Link>
-    </Content>
-    <Content Include="..\..\ImageCards\Assets\Images\mouse01.jpg">
-      <Link>Assets\Images\mouse01.jpg</Link>
-    </Content>
-    <Content Include="..\..\ImageCards\Assets\Images\mouse02.jpg">
-      <Link>Assets\Images\mouse02.jpg</Link>
-    </Content>
-    <Content Include="..\..\ImageCards\Assets\Images\mouse03.jpg">
-      <Link>Assets\Images\mouse03.jpg</Link>
-    </Content>
-    <Content Include="..\..\ImageCards\Assets\Images\turtle01.jpg">
-      <Link>Assets\Images\turtle01.jpg</Link>
-    </Content>
-    <Content Include="..\..\ImageCards\Assets\Images\turtle02.jpg">
-      <Link>Assets\Images\turtle02.jpg</Link>
-    </Content>
-    <Content Include="..\..\ImageCards\Assets\Images\turtle03.jpg">
-      <Link>Assets\Images\turtle03.jpg</Link>
-    </Content>
     <Content Include="..\..\ImageCards\Assets\logo.jpg">
       <Link>Assets\logo.jpg</Link>
     </Content>
@@ -154,10 +91,6 @@
   </ItemGroup>
   <ItemGroup>
     <SDKReference Include="Microsoft.WinJS.1.0, Version=1.0" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Assets\Icons\" />
-    <Folder Include="Assets\Images\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).targets" />
   <!-- To modify your build process, add your task inside one of the targets below then uncomment

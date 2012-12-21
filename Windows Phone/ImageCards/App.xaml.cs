@@ -7,6 +7,7 @@ using System.Windows.Navigation;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
 using ImageCards.Resources;
+using System.ComponentModel;
 
 namespace ImageCards
 {
@@ -17,6 +18,39 @@ namespace ImageCards
         /// </summary>
         /// <returns>The root frame of the Phone Application.</returns>
         public static PhoneApplicationFrame RootFrame { get; private set; }
+
+        /// <summary>
+        /// Determines if the application is being run by a design tool
+        /// </summary>
+        private static bool IsDesignMode
+        {
+            get
+            {
+                // VisualStudio sometimes returns false for DesignMode, DesignTool is our backup
+                //return DesignerProperties.GetIsInDesignMode(this) || DesignerProperties.IsInDesignTool;
+                return DesignerProperties.IsInDesignTool;
+            }
+        }
+
+        /// <summary>
+        /// Determines if the application is running in the dark theme
+        /// </summary>
+        public static bool IsDarkTheme
+        {
+
+            get
+            {
+                if (IsDesignMode)
+                {
+                    return true;
+                }
+                else
+                {
+                    return (Visibility)Application.Current.Resources["PhoneDarkThemeVisibility"] == Visibility.Visible;
+                }
+            }
+        }
+
 
         /// <summary>
         /// Constructor for the Application object.
@@ -39,7 +73,7 @@ namespace ImageCards
             if (Debugger.IsAttached)
             {
                 // Display the current frame rate counters.
-                Application.Current.Host.Settings.EnableFrameRateCounter = true;
+                Application.Current.Host.Settings.EnableFrameRateCounter = false;
 
                 // Show the areas of the app that are being redrawn in each frame.
                 //Application.Current.Host.Settings.EnableRedrawRegions = true;

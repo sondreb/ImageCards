@@ -65,23 +65,40 @@ var card = function (name, id) {
     self._name = name;
     self.Id = ko.observable(id);
 
-    self.Select = function (event) {
+    self.Select = function (event, source) {
+
         if (previousCard != null) {
             previousCard.Selected(false);
         }
 
-        self.Selected(true);
+        previousCard = self;
 
-        var myVideo = document.getElementsByTagName('audio')[0];
-        myVideo.src = "Assets/Sounds/" + self.Id() + ".mp3";
-        myVideo.load();
-        myVideo.play();
+        var target = $(source.currentTarget);
+
+        target.removeClass("flip").addClass("flip");
+        var wait = window.setTimeout(function () {
+            target.removeClass("flip")
+        },
+			1200
+		);
+
+        var wait = window.setTimeout(function () {
+
+            self.Selected(true);
+
+            var myVideo = document.getElementsByTagName('audio')[0];
+            myVideo.src = "Assets/Sounds/" + self.Id() + ".mp3";
+            myVideo.load();
+            myVideo.play();
+
+        }, 200);
+
+
 
         //self.Audio = new Audio("Assets/Sounds/" + self.Id() + ".wav"); // buffers automatically when created
         //self.Audio.play();
-
-        previousCard = self;
     }
+
 
     self.Selected = ko.observable(false);
 
@@ -107,6 +124,21 @@ var card = function (name, id) {
 
     }, self);
 
+}
+
+function changeTheme(theme)
+{
+    mainViewModel.Theme(theme);
+
+    if (theme == "True")
+    {
+        $("body").css("color", "white");
+    }
+    else
+    {
+        $("body").css("color", "black");
+        //$(".icon").css("filter", "invert");
+    }
 }
 
 function populateCards() {
@@ -152,6 +184,21 @@ var mainViewModel = function () {
 
     self.PreviousCard = null;
     self.Cards = ko.observableArray(populateCards());
+
+
+    self.Theme = ko.observable("Dark");
+
+    self.LogoUrl = ko.computed(function () {
+        return "Assets/brain_" + self.Theme() + ".png";
+    }, self);
+
+    self.BackIconUrl = ko.computed(function () {
+        return "Assets/Icons/" + self.Theme() + "/back.png";
+    }, self);
+
+    self.BackIconBackgroundUrl = ko.computed(function () {
+        return "url(Assets/Icons/" + self.Theme() + "/basecircle.png)";
+    }, self);
 
     self.About = function () {
         if ($("#about").is(":visible")) {

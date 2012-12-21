@@ -25,7 +25,6 @@ namespace ImageCards
         {
             // Add your URL here
             Browser.Navigate(new Uri(MainUri, UriKind.Relative));
-            //Browser.IsScriptEnabled = true;
         }
 
         // Navigates back in the web browser's navigation stack, not the applications.
@@ -50,6 +49,11 @@ namespace ImageCards
         private void Browser_NavigationFailed(object sender, System.Windows.Navigation.NavigationFailedEventArgs e)
         {
             MessageBox.Show("Navigation to this page failed, check your internet connection");
+        }
+
+        private void Browser_LoadCompleted(object sender, NavigationEventArgs e)
+        {
+            Browser.InvokeScript("changeTheme", App.IsDarkTheme ? "Dark" : "Light");
         }
     }
 }
