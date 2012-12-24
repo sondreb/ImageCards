@@ -53,7 +53,23 @@ namespace ImageCards
 
         private void Browser_LoadCompleted(object sender, NavigationEventArgs e)
         {
-            Browser.InvokeScript("changeTheme", App.IsDarkTheme ? "Dark" : "Light");
+            //Browser.InvokeScript("changeTheme", App.IsDarkTheme ? "Dark" : "Light");
+        }
+
+        private void Browser_ScriptNotify(object sender, NotifyEventArgs e)
+        {
+            switch (e.Value)
+            {
+                case "onload":
+                    OnLoad();
+                    break;
+            }
+        }
+
+        private void OnLoad()
+        {
+            var text = Resource.RenderJson();
+            Browser.InvokeScript("Initialize", text);
         }
     }
 }

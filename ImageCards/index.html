@@ -17,8 +17,10 @@
     <link rel="stylesheet" href="Styles/base.css" />
     <link rel="stylesheet" href="Styles/app.css" />
 
-    <script src="Scripts/jquery-1.7.2.js"></script>
-    <script src="Scripts/knockout-2.1.0.js"></script>
+    <script src="Scripts/jquery-1.8.3.js"></script>
+    <script src="Scripts/knockout-2.2.0.js"></script>
+    <script src="Scripts/knockout.mapping-latest.js"></script>
+
     <script src="Scripts/base.js"></script>
     <script src="Scripts/app.js"></script>
 
@@ -34,7 +36,7 @@
     <div id="gameboard">
 
         <!--<img class="brain" src="Assets/brain.png" />-->
-        <h1>Image Cards for Kids</h1>
+        <h1 data-bind="text: Text.ApplicationTitle"></h1>
 
         <ul class="flex" data-bind="foreach: Cards">
             <li class="tile_narrow tile animated" data-bind="click: Select, style: { 'background-image': Url() }">
@@ -48,7 +50,7 @@
             </div>
         </div>-->
 
-        <div class="tile_wide" data-bind="click: About"><span>About Image Cards</span></div>
+        <div class="tile_wide" data-bind="click: About"><span data-bind="text: Text.AboutBox"></span></div>
     </div>
 
     <video style="display: none;"></video>
@@ -58,30 +60,19 @@
         <div>
             <img data-bind="click: About, attr: { src: BackIconUrl }, style: { 'background-image': BackIconBackgroundUrl() }" class="icon" />
 
-            <h1>Image Cards for Kids</h1>
+            <h1 data-bind="text: Text.ApplicationTitle"></h1>
 
-            <p>by:</p>
+            <p data-bind="text: Text.By"></p>
             <img data-bind="attr: {src: LogoUrl}" />
 
-            <p>For more games, visit www.brain.no</p>
-            <p>For your kids' protection, our apps for kids will not contain ads or links.</p>
+            <span data-bind="html: Text.About"></span>
 
-            <p>Attributions:</p>
-            <p>
-                Martin L(EuroMagic), Magnus Bråth, elizabeth tersigni(ETersigni), John Talbot(jpctalbot),
-                NoiseCollector, mich3d.
-            </p>
-            <p>All content used under Creative Commons Attribution. For complete attribution, visit brain.no</p>
         </div>
     </div>
 
     <script>
         $(function () {
 
-            var vm = new mainViewModel();
-            mainViewModel = vm;
-
-            ko.applyBindings(vm, document.body);
 
             $('.tile').bind('mouseenter', function (source) {
                 //$(this).children(".description").fadeIn(50);
@@ -94,6 +85,7 @@
 
         });
     </script>
+
 
     <!--
     <table class="squareTable stretch" border="1">

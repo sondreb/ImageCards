@@ -92,6 +92,7 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Code\Resource.cs" />
     <Compile Include="LocalizedStrings.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
@@ -222,11 +223,17 @@
     <Content Include="..\..\ImageCards\Scripts\base.js">
       <Link>Scripts\base.js</Link>
     </Content>
-    <Content Include="..\..\ImageCards\Scripts\jquery-1.7.2.js">
-      <Link>Scripts\jquery-1.7.2.js</Link>
+    <Content Include="..\..\ImageCards\Scripts\jquery-1.8.3.js">
+      <Link>Scripts\jquery-1.8.3.js</Link>
     </Content>
-    <Content Include="..\..\ImageCards\Scripts\knockout-2.1.0.js">
-      <Link>Scripts\knockout-2.1.0.js</Link>
+    <Content Include="..\..\ImageCards\Scripts\knockout-2.2.0.js">
+      <Link>Scripts\knockout-2.2.0.js</Link>
+    </Content>
+    <Content Include="..\..\ImageCards\Scripts\knockout.mapping-latest.js">
+      <Link>Scripts\knockout.mapping-latest.js</Link>
+    </Content>
+    <Content Include="..\..\ImageCards\Scripts\_references.js">
+      <Link>Scripts\_references.js</Link>
     </Content>
     <Content Include="..\..\ImageCards\Styles\app.css">
       <Link>Styles\app.css</Link>

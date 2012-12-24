@@ -53,9 +53,6 @@
     <AppxManifest Include="package.appxmanifest">
       <SubType>Designer</SubType>
     </AppxManifest>
-    <Content Include="..\..\ImageCards\Assets\brain.png">
-      <Link>Assets\brain.png</Link>
-    </Content>
     <Content Include="..\..\ImageCards\Assets\logo.jpg">
       <Link>Assets\logo.jpg</Link>
     </Content>

@@ -18,7 +18,7 @@
                           HorizontalAlignment="Stretch"
                           VerticalAlignment="Stretch"
                           Loaded="Browser_Loaded"
-                          NavigationFailed="Browser_NavigationFailed" IsScriptEnabled="True" LoadCompleted="Browser_LoadCompleted" />
+                          NavigationFailed="Browser_NavigationFailed" IsScriptEnabled="True" LoadCompleted="Browser_LoadCompleted" ScriptNotify="Browser_ScriptNotify" />
     </Grid>
 
     <!-- ApplicationBar -->

@@ -135,4 +135,21 @@
   <data name="AppBarMenuItemText" xml:space="preserve">
     <value>Menu Item</value>
   </data>
+  <data name="By" xml:space="preserve">
+    <value>by:</value>
+  </data>
+  <data name="About" xml:space="preserve">
+    <value>&lt;p&gt;For more games, visit www.brain.no&lt;/p&gt;
+            &lt;p&gt;For your kids' protection, our apps for kids will not contain ads or links.&lt;/p&gt;
+
+            &lt;p&gt;Attributions:&lt;/p&gt;
+            &lt;p&gt;
+                Martin L(EuroMagic), Magnus Bråth, elizabeth tersigni(ETersigni), John Talbot(jpctalbot),
+                NoiseCollector, mich3d.
+            &lt;/p&gt;
+            &lt;p&gt;All content used under Creative Commons Attribution. For complete attribution, visit brain.no&lt;/p&gt;</value>
+  </data>
+  <data name="AboutBox" xml:space="preserve">
+    <value>About Image Cards</value>
+  </data>
 </root>

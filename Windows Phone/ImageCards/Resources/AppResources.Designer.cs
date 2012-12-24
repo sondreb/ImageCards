@@ -61,6 +61,32 @@ namespace ImageCards.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to &lt;p&gt;For more games, visit www.brain.no&lt;/p&gt;
+        ///            &lt;p&gt;For your kids&apos; protection, our apps for kids will not contain ads or links.&lt;/p&gt;
+        ///
+        ///            &lt;p&gt;Attributions:&lt;/p&gt;
+        ///            &lt;p&gt;
+        ///                Martin L(EuroMagic), Magnus Bråth, elizabeth tersigni(ETersigni), John Talbot(jpctalbot),
+        ///                NoiseCollector, mich3d.
+        ///            &lt;/p&gt;
+        ///            &lt;p&gt;All content used under Creative Commons Attribution. For complete attribution, visit brain.no&lt;/p&gt;.
+        /// </summary>
+        public static string About {
+            get {
+                return ResourceManager.GetString("About", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to About Image Cards.
+        /// </summary>
+        public static string AboutBox {
+            get {
+                return ResourceManager.GetString("AboutBox", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to add.
         /// </summary>
         public static string AppBarButtonText {
@@ -84,6 +110,15 @@ namespace ImageCards.Resources {
         public static string ApplicationTitle {
             get {
                 return ResourceManager.GetString("ApplicationTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to by:.
+        /// </summary>
+        public static string By {
+            get {
+                return ResourceManager.GetString("By", resourceCulture);
             }
         }
         
