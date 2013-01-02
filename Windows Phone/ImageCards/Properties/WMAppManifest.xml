@@ -3,7 +3,6 @@
   <DefaultLanguage xmlns="" code="en-US" />
   <Languages xmlns="">
     <Language code="no" />
-    <Language code="sv-SE" />
     <Language code="sv" />
     <Language code="da" />
   </Languages>
@@ -25,13 +24,18 @@
           <Photo03ImageURI IsRelative="true" IsResource="false">Assets\Tiles\FlipCycleTileMedium3.png</Photo03ImageURI>
           <Photo04ImageURI IsRelative="true" IsResource="false">Assets\Tiles\FlipCycleTileMedium4.png</Photo04ImageURI>
           <Photo05ImageURI IsRelative="true" IsResource="false">Assets\Tiles\FlipCycleTileMedium5.png</Photo05ImageURI>
-          <Photo06ImageURI IsRelative="true" IsResource="false"></Photo06ImageURI>
-          <Photo07ImageURI IsRelative="true" IsResource="false"></Photo07ImageURI>
-          <Photo08ImageURI IsRelative="true" IsResource="false"></Photo08ImageURI>
-          <Photo09ImageURI IsRelative="true" IsResource="false"></Photo09ImageURI>
+          <Photo06ImageURI IsRelative="true" IsResource="false">
+          </Photo06ImageURI>
+          <Photo07ImageURI IsRelative="true" IsResource="false">
+          </Photo07ImageURI>
+          <Photo08ImageURI IsRelative="true" IsResource="false">
+          </Photo08ImageURI>
+          <Photo09ImageURI IsRelative="true" IsResource="false">
+          </Photo09ImageURI>
           <Count>0</Count>
           <HasLarge>false</HasLarge>
-          <DeviceLockImageURI IsRelative="true" IsResource="false"></DeviceLockImageURI>
+          <DeviceLockImageURI IsRelative="true" IsResource="false">
+          </DeviceLockImageURI>
         </TemplateCycle>
       </PrimaryToken>
     </Tokens>

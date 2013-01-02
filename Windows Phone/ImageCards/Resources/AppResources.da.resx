@@ -169,4 +169,7 @@ FreeSound.org, SoundBible.com, SoundJax.com, FreeSFX.co.uk, quijano.net
   <data name="Turtle" xml:space="preserve">
     <value>Turtle</value>
   </data>
+  <data name="Version" xml:space="preserve">
+    <value>Version: 1.0</value>
+  </data>
 </root>

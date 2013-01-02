@@ -186,5 +186,14 @@ namespace ImageCards.Resources {
                 return ResourceManager.GetString("Turtle", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Version: 1.0.
+        /// </summary>
+        public static string Version {
+            get {
+                return ResourceManager.GetString("Version", resourceCulture);
+            }
+        }
     }
 }

@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>ScreenShots.cs</id>
+    <version>1.0</version>
+    <title>Windows Phone ScreenShots.cs</title>
+    <authors>Jeff Wilcox</authors>
+    <owners>Jeff Wilcox</owners>
+    <licenseUrl>http://www.opensource.org/licenses/MS-PL</licenseUrl>
+    <projectUrl>http://www.jeff.wilcox.name/</projectUrl>
+    <iconUrl>http://d2bk44826ux9xe.cloudfront.net/phone.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Provides a helper for generating and storing screen shots of your apps inside isolated storage.</description>
+    <summary>Provides a helper for generating and storing screen shots of your apps inside isolated storage.</summary>
+    <copyright>Copyright 2011</copyright>
+    <tags>Windows "Windows Phone" phone wp7 screen shot "screen shots" screenshots.cs</tags>
+    <references />
+  </metadata>
+</package>

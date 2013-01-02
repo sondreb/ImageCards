@@ -11,7 +11,7 @@ using System.Resources;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("brain.no")]
 [assembly: AssemblyProduct("Image Cards for Kids")]
-[assembly: AssemblyCopyright("Copyright © brain.no 2012")]
+[assembly: AssemblyCopyright("Copyright © brain.no 2012-2013")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

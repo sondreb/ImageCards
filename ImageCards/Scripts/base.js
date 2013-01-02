@@ -1,5 +1,8 @@
 ﻿/// <reference path="_references.js" />
 
+var previousCard = null;
+
+
 $(function () {
 
 	var phone = navigator.userAgent.match(/Windows Phone/i);
@@ -10,7 +13,6 @@ $(function () {
 	{
 		window.external.notify("onload");
 	}
-
 
 	$("img").one('load', function () {
 
@@ -25,46 +27,6 @@ $(function () {
 	});
 
 	var tiles = $(".tile_narrow");
-
-	//tiles.each(function () {
-	//    $(this).css("transform-origin", this.offsetLeft * -1 - 24 + "px 50%");
-	//    $(this).css("transform", "perspective(800px) rotateY(-90deg)");
-	//});
-
-	//setTimeout(function () {
-	//    tiles.each(function (idx) { 
-
-	//        $(this).css({
-	//            "transform" : "rotateY(0deg)", 
-	//            "transition-duration": "1s"
-	//        });
-
-	//    });
-
-	//    $(this).bind("transitionend", function () {
-	//        $(this).css({
-	//            "transition": "none",
-	//            "transform-origin": "50% 50%"
-	//        })
-	//    });
-
-	//    }, 500);
-
-
-	//tiles.bind("MSPointerMove MSPointerUp MSPointerCancel", function (event) {
-	//    switch (event.type)
-	//    {
-	//        case "MSPointerUp":
-	//        case "MSPointerCancel":
-	//            tiles.each(function () {
-	//                $(this).css("transform", "rotate3d(1, 1, 1, 0deg)");
-	//            });
-	//            break;
-	//        case "MSPointerMove":
-	//            //$(this).css("transform", calculateTransform(event.originalEvent.offsetX);
-	//            break;
-	//    }
-	//});
 
 	// If the external host is not available, we will make sure to run Initialize on our own.
 	if (phone == null) {
@@ -81,7 +43,8 @@ $(function () {
 	        "AppBarMenuItemText": "Menu Item",
 	        "ResourceFlowDirection": "LeftToRight",
 	        "ApplicationTitle": "IMAGE CARDS FOR KIDS",
-	        "Bird": "Bird"
+	        "Bird": "Bird",
+            "Version": "Version: 1.0"
 	    }
         , false);
 	}
@@ -90,17 +53,6 @@ $(function () {
 
 function Initialize(text, isJSON)
 {
-	// Parse text resources before viewmodels.
-	//if (text != null) {
-	//	Resource = $.parseJSON(text);
-	//}
-	//else
-	//{
-	//	Resource = new Object();
-	//	Resource.ApplicationTitle = "Image Cards for Kids";
-	//	Resource.By = "by:";
-	//}
-
 	// Create the view model and apply bindings.
     var vm = new mainViewModel();
 
@@ -121,9 +73,6 @@ function Initialize(text, isJSON)
 
     ko.applyBindings(mainViewModel, document.body);
 }
-
-
-var previousCard = null;
 
 var card = function (name, id) {
 	var self = this;
@@ -158,12 +107,9 @@ var card = function (name, id) {
 
 		}, 200);
 
-
-
-		//self.Audio = new Audio("Assets/Sounds/" + self.Id() + ".wav"); // buffers automatically when created
+		//self.Audio = new Audio("Assets/Sounds/" + self.Id() + ".mp3"); // buffers automatically when created
 		//self.Audio.play();
 	}
-
 
 	self.Selected = ko.observable(false);
 
@@ -202,7 +148,6 @@ function changeTheme(theme)
 	else
 	{
 		$("body").css("color", "black");
-		//$(".icon").css("filter", "invert");
 	}
 }
 

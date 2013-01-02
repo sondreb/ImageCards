@@ -78,6 +78,10 @@ namespace ImageCards
                 // Show the areas of the app that are being redrawn in each frame.
                 //Application.Current.Host.Settings.EnableRedrawRegions = true;
 
+                // Display the metro grid helper.
+                //MetroGridHelper.IsVisible = true;
+                ScreenShots.BeginTakingPictures();
+
                 // Enable non-production analysis visualization mode,
                 // which shows areas of a page that are handed off to GPU with a colored overlay.
                 //Application.Current.Host.Settings.EnableCacheVisualization = true;
