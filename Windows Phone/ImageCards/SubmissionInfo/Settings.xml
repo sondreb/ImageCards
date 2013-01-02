@@ -1,6 +1,6 @@
 <MarketplaceDetails>
   <SmallAppTile>Icon_300.png</SmallAppTile>
-  <ScreenShots>Screenshot1_WVGA.png;Screenshot2_WVGA.png;Screenshot3_WVGA.png;Screenshot4_WVGA.png;;;;;</ScreenShots>
-  <ScreenShotsWXGA>;;;;;;;;</ScreenShotsWXGA>
-  <ScreenShots720P>;;;;;;;;</ScreenShots720P>
+  <ScreenShots>WVGA1.png;WVGA2.png;WVGA3.png;WVGA4.png;WVGA5.png;;;;</ScreenShots>
+  <ScreenShotsWXGA>WXGA1.png;WXGA2.png;WXGA3.png;WXGA4.png;WXGA5.png;;;;</ScreenShotsWXGA>
+  <ScreenShots720P>720p1.png;720p2.png;720p3.png;720p4.png;720p5.png;;;;</ScreenShots720P>
 </MarketplaceDetails>

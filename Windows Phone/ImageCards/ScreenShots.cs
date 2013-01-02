@@ -99,8 +99,10 @@ namespace System.Windows
                         var width = fe.ActualWidth;
                         var height = fe.ActualHeight;
 
-                        WriteableBitmap wb = new WriteableBitmap(ui,
-                            new TranslateTransform());
+                        WriteableBitmap wb = new WriteableBitmap(ui, new TranslateTransform());
+
+
+
                         wb.Render(ui, new TranslateTransform());
                         byte[] bb = EncodeToJpeg(wb);
 

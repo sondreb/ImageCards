@@ -80,7 +80,7 @@ namespace ImageCards
 
                 // Display the metro grid helper.
                 //MetroGridHelper.IsVisible = true;
-                ScreenShots.BeginTakingPictures();
+                //ScreenShots.BeginTakingPictures();
 
                 // Enable non-production analysis visualization mode,
                 // which shows areas of a page that are handed off to GPU with a colored overlay.

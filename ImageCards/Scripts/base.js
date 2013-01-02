@@ -30,23 +30,23 @@ $(function () {
 
 	// If the external host is not available, we will make sure to run Initialize on our own.
 	if (phone == null) {
-	    Initialize({
-	        "AppBarButtonText": "add",
-	        "ResourceLanguage": "en-US",
-	        "Turtle": "Turtle",
-	        "By": "by:",
-	        "Dog": "Dog",
-	        "Cat": "Cat",
-	        "About": "<p>For more games, visit www.brain.no</p>            <p>For your kids' protection, our apps and games for kids will not contain ads or links.</p>            <p>Attributions:</p>            <p>                Martin L(EuroMagic), Magnus Bråth, elizabeth tersigni(ETersigni), John Talbot(jpctalbot),                NoiseCollector, mich3d.            </p>            <p>All content used under Creative Commons Attribution. For complete attribution, visit brain.no</p>",
-	        "Mouse": "Mouse",
-	        "AboutBox": "About Image Cards",
-	        "AppBarMenuItemText": "Menu Item",
-	        "ResourceFlowDirection": "LeftToRight",
-	        "ApplicationTitle": "IMAGE CARDS FOR KIDS",
-	        "Bird": "Bird",
-            "Version": "Version: 1.0"
-	    }
-        , false);
+		Initialize({
+			"AppBarButtonText": "add",
+			"ResourceLanguage": "en-US",
+			"Turtle": "Turtle",
+			"By": "by:",
+			"Dog": "Dog",
+			"Cat": "Cat",
+			"About": "<p>For more games, visit www.brain.no</p>            <p>For your kids' protection, our apps and games for kids will not contain ads or links.</p>            <p>Attributions:</p>            <p>                Martin L(EuroMagic), Magnus Bråth, elizabeth tersigni(ETersigni), John Talbot(jpctalbot),                NoiseCollector, mich3d.            </p>            <p>All content used under Creative Commons Attribution. For complete attribution, visit brain.no</p>",
+			"Mouse": "Mouse",
+			"AboutBox": "About Image Cards",
+			"AppBarMenuItemText": "Menu Item",
+			"ResourceFlowDirection": "LeftToRight",
+			"ApplicationTitle": "IMAGE CARDS FOR KIDS",
+			"Bird": "Bird",
+			"Version": "Version: 1.0"
+		}
+		, false);
 	}
 
 });
@@ -54,24 +54,24 @@ $(function () {
 function Initialize(text, isJSON)
 {
 	// Create the view model and apply bindings.
-    var vm = new mainViewModel();
+	var vm = new mainViewModel();
 
-    // Define the global MainViewModel property.
-    mainViewModel = vm;
+	// Define the global MainViewModel property.
+	mainViewModel = vm;
 
-    // Parse the text resources,  needs to be run before populateCards().
-    if (isJSON == null)
-    {
-        mainViewModel.Text(ko.mapping.fromJSON(text));
-    }
-    else
-    {
-        mainViewModel.Text(ko.mapping.fromJS(text));
-    }
-    
-    mainViewModel.Cards = ko.observableArray(populateCards());
+	// Parse the text resources,  needs to be run before populateCards().
+	if (isJSON == null)
+	{
+		mainViewModel.Text(ko.mapping.fromJSON(text));
+	}
+	else
+	{
+		mainViewModel.Text(ko.mapping.fromJS(text));
+	}
+	
+	mainViewModel.Cards = ko.observableArray(populateCards());
 
-    ko.applyBindings(mainViewModel, document.body);
+	ko.applyBindings(mainViewModel, document.body);
 }
 
 var card = function (name, id) {
