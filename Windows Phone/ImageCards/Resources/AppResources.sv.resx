@@ -122,14 +122,14 @@
     <comment>Controls the FlowDirection for all elements in the RootFrame. Set to the traditional direction of this resource file's language</comment>
   </data>
   <data name="ResourceLanguage" xml:space="preserve">
-    <value>no</value>
+    <value>sv</value>
     <comment>Controls the Language and ensures that the font for all elements in the RootFrame aligns with the app's language. Set to the language code of this resource file's language.</comment>
   </data>
   <data name="ApplicationTitle" xml:space="preserve">
-    <value>BILDEKORT FOR BARN</value>
+    <value>BILDKORT FÖR BARN</value>
   </data>
   <data name="AppBarButtonText" xml:space="preserve">
-    <value>legg til</value>
+    <value>add</value>
     <comment>2</comment>
   </data>
   <data name="AppBarMenuItemText" xml:space="preserve">
@@ -139,28 +139,27 @@
     <value>av:</value>
   </data>
   <data name="About" xml:space="preserve">
-    <value>&lt;p&gt; For flere spill, kan du gå www.brain.no &lt;/ p&gt;
-             &lt;p&gt; for barnas beskyttelse, vil våre programmer for barn ikke inneholde annonser eller koblinger. &lt;/ p&gt;
+    <value>&lt;p&gt;For fler spel, besök www.brain.no &lt;/ p&gt;
+             &lt;p&gt;For barnens skydd, våra program och spel för barn kommer inte att innehålla annonser eller länkar. &lt;/ p&gt;
 
-             &lt;p&gt; Tilskrivelser: &lt;/ p&gt;
-             &lt;p&gt;
-                 Magnus Bråth, anaa yoo, ilker ender, Phalinn Ooi, 
+             &lt;p&gt;Tillskrivningar: &lt;/ p&gt;
+             &lt;p&gt;Magnus Bråth, anaa yoo, ilker ender, Phalinn Ooi, 
 Christopher Schmidt, Bart Rousseau, paddynapper, 
 flickrfavorites, Taro Taylor, Stephen Michael Barnett, 
 Mark Bray, Chris Isherwood, Martin L(EuroMagic), 
 elizabeth tersigni(ETersigni), John Talbot(jpctalbot),
 FreeSound.org, SoundBible.com, SoundJax.com, FreeSFX.co.uk, quijano.net
              &lt;/ p&gt;
-             &lt;p&gt; Alt innhold brukes under Creative Commons Attribution. For fullstendig henvisning, gå brain.no &lt;/ p&gt;</value>
+             &lt;p&gt;Allt innehåll används under Creative Commons Erkännande. För komplett tilldelning, besök brain.no&lt;/ p&gt;</value>
   </data>
   <data name="AboutBox" xml:space="preserve">
-    <value>Om bildekort</value>
+    <value>Om bildkort</value>
   </data>
   <data name="Dog" xml:space="preserve">
     <value>Hund</value>
   </data>
   <data name="Bird" xml:space="preserve">
-    <value>Fugl</value>
+    <value>Fågel</value>
   </data>
   <data name="Cat" xml:space="preserve">
     <value>Katt</value>
@@ -169,6 +168,6 @@ FreeSound.org, SoundBible.com, SoundJax.com, FreeSFX.co.uk, quijano.net
     <value>Mus</value>
   </data>
   <data name="Turtle" xml:space="preserve">
-    <value>Skilpadde</value>
+    <value>Sköldpadda</value>
   </data>
 </root>

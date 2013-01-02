@@ -15,7 +15,7 @@
     <TargetFrameworkVersion>v8.0</TargetFrameworkVersion>
     <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
     <SilverlightApplication>true</SilverlightApplication>
-    <SupportedCultures>no</SupportedCultures>
+    <SupportedCultures>no%3bda%3bsv</SupportedCultures>
     <XapOutputs>true</XapOutputs>
     <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
     <XapFilename>ImageCards_$(Configuration)_$(Platform).xap</XapFilename>
@@ -196,23 +196,59 @@
     <Content Include="..\..\ImageCards\Assets\Images\turtle03.jpg">
       <Link>Assets\Images\turtle03.jpg</Link>
     </Content>
+    <Content Include="..\..\ImageCards\Assets\Sounds\bird01.mp3">
+      <Link>Assets\Sounds\bird01.mp3</Link>
+    </Content>
+    <Content Include="..\..\ImageCards\Assets\Sounds\bird02.mp3">
+      <Link>Assets\Sounds\bird02.mp3</Link>
+    </Content>
+    <Content Include="..\..\ImageCards\Assets\Sounds\bird03.mp3">
+      <Link>Assets\Sounds\bird03.mp3</Link>
+    </Content>
+    <Content Include="..\..\ImageCards\Assets\Sounds\bird04.mp3">
+      <Link>Assets\Sounds\bird04.mp3</Link>
+    </Content>
+    <Content Include="..\..\ImageCards\Assets\Sounds\cat01.mp3">
+      <Link>Assets\Sounds\cat01.mp3</Link>
+    </Content>
+    <Content Include="..\..\ImageCards\Assets\Sounds\cat02.mp3">
+      <Link>Assets\Sounds\cat02.mp3</Link>
+    </Content>
+    <Content Include="..\..\ImageCards\Assets\Sounds\cat03.mp3">
+      <Link>Assets\Sounds\cat03.mp3</Link>
+    </Content>
+    <Content Include="..\..\ImageCards\Assets\Sounds\cat04.mp3">
+      <Link>Assets\Sounds\cat04.mp3</Link>
+    </Content>
     <Content Include="..\..\ImageCards\Assets\Sounds\dog01.mp3">
       <Link>Assets\Sounds\dog01.mp3</Link>
-    </Content>
-    <Content Include="..\..\ImageCards\Assets\Sounds\dog01.wav">
-      <Link>Assets\Sounds\dog01.wav</Link>
     </Content>
     <Content Include="..\..\ImageCards\Assets\Sounds\dog02.mp3">
       <Link>Assets\Sounds\dog02.mp3</Link>
     </Content>
-    <Content Include="..\..\ImageCards\Assets\Sounds\dog02.wav">
-      <Link>Assets\Sounds\dog02.wav</Link>
-    </Content>
     <Content Include="..\..\ImageCards\Assets\Sounds\dog03.mp3">
       <Link>Assets\Sounds\dog03.mp3</Link>
     </Content>
-    <Content Include="..\..\ImageCards\Assets\Sounds\dog03.wav">
-      <Link>Assets\Sounds\dog03.wav</Link>
+    <Content Include="..\..\ImageCards\Assets\Sounds\dog04.mp3">
+      <Link>Assets\Sounds\dog04.mp3</Link>
+    </Content>
+    <Content Include="..\..\ImageCards\Assets\Sounds\mouse01.mp3">
+      <Link>Assets\Sounds\mouse01.mp3</Link>
+    </Content>
+    <Content Include="..\..\ImageCards\Assets\Sounds\mouse02.mp3">
+      <Link>Assets\Sounds\mouse02.mp3</Link>
+    </Content>
+    <Content Include="..\..\ImageCards\Assets\Sounds\mouse03.mp3">
+      <Link>Assets\Sounds\mouse03.mp3</Link>
+    </Content>
+    <Content Include="..\..\ImageCards\Assets\Sounds\turtle01.mp3">
+      <Link>Assets\Sounds\turtle01.mp3</Link>
+    </Content>
+    <Content Include="..\..\ImageCards\Assets\Sounds\turtle02.mp3">
+      <Link>Assets\Sounds\turtle02.mp3</Link>
+    </Content>
+    <Content Include="..\..\ImageCards\Assets\Sounds\turtle03.mp3">
+      <Link>Assets\Sounds\turtle03.mp3</Link>
     </Content>
     <Content Include="..\..\ImageCards\index.html">
       <Link>index.html</Link>
@@ -270,11 +306,13 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Resources\AppResources.da.resx" />
     <EmbeddedResource Include="Resources\AppResources.no.resx" />
     <EmbeddedResource Include="Resources\AppResources.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>AppResources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Resources\AppResources.sv.resx" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).$(TargetFrameworkVersion).Overrides.targets" />

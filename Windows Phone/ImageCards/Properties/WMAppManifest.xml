@@ -3,6 +3,9 @@
   <DefaultLanguage xmlns="" code="en-US" />
   <Languages xmlns="">
     <Language code="no" />
+    <Language code="sv-SE" />
+    <Language code="sv" />
+    <Language code="da" />
   </Languages>
   <App xmlns="" ProductID="{eabe44a2-2a3a-4d56-90e4-d9b3ada0ab14}" Title="Image Cards for Kids" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="brain.no" Description="Simple and fun game for the smallest children. Displays tiles that turns around when touched, to reveal the a photo, the name and plays a sound of different animals." Publisher="brain.no" PublisherID="{971d5b70-f6e8-46c2-88c4-6917ca3595c1}">
     <IconPath IsRelative="true" IsResource="false">Assets\ApplicationIcon.png</IconPath>
@@ -22,18 +25,13 @@
           <Photo03ImageURI IsRelative="true" IsResource="false">Assets\Tiles\FlipCycleTileMedium3.png</Photo03ImageURI>
           <Photo04ImageURI IsRelative="true" IsResource="false">Assets\Tiles\FlipCycleTileMedium4.png</Photo04ImageURI>
           <Photo05ImageURI IsRelative="true" IsResource="false">Assets\Tiles\FlipCycleTileMedium5.png</Photo05ImageURI>
-          <Photo06ImageURI IsRelative="true" IsResource="false">
-          </Photo06ImageURI>
-          <Photo07ImageURI IsRelative="true" IsResource="false">
-          </Photo07ImageURI>
-          <Photo08ImageURI IsRelative="true" IsResource="false">
-          </Photo08ImageURI>
-          <Photo09ImageURI IsRelative="true" IsResource="false">
-          </Photo09ImageURI>
+          <Photo06ImageURI IsRelative="true" IsResource="false"></Photo06ImageURI>
+          <Photo07ImageURI IsRelative="true" IsResource="false"></Photo07ImageURI>
+          <Photo08ImageURI IsRelative="true" IsResource="false"></Photo08ImageURI>
+          <Photo09ImageURI IsRelative="true" IsResource="false"></Photo09ImageURI>
           <Count>0</Count>
           <HasLarge>false</HasLarge>
-          <DeviceLockImageURI IsRelative="true" IsResource="false">
-          </DeviceLockImageURI>
+          <DeviceLockImageURI IsRelative="true" IsResource="false"></DeviceLockImageURI>
         </TemplateCycle>
       </PrimaryToken>
     </Tokens>

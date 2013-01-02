@@ -66,10 +66,12 @@ namespace ImageCards.Resources {
         ///
         ///            &lt;p&gt;Attributions:&lt;/p&gt;
         ///            &lt;p&gt;
-        ///                Martin L(EuroMagic), Magnus Bråth, elizabeth tersigni(ETersigni), John Talbot(jpctalbot),
-        ///                NoiseCollector, mich3d.
-        ///            &lt;/p&gt;
-        ///            &lt;p&gt;All content used under Creative Commons Attribution. For complete attribution, visit brain.no&lt;/p&gt;.
+        ///                Magnus Bråth, anaa yoo, ilker ender, Phalinn Ooi, 
+        ///Christopher Schmidt, Bart Rousseau, paddynapper, 
+        ///flickrfavorites, Taro Taylor, Stephen Michael Barnett, 
+        ///Mark Bray, Chris Isherwood, Martin L(EuroMagic), 
+        ///elizabeth tersigni(ETersigni), John Talbot(jpctalbot),
+        ///FreeSound.org, SoundBible.c [rest of string was truncated]&quot;;.
         /// </summary>
         public static string About {
             get {
@@ -114,6 +116,15 @@ namespace ImageCards.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Bird.
+        /// </summary>
+        public static string Bird {
+            get {
+                return ResourceManager.GetString("Bird", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to by:.
         /// </summary>
         public static string By {
@@ -123,11 +134,29 @@ namespace ImageCards.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Cat.
+        /// </summary>
+        public static string Cat {
+            get {
+                return ResourceManager.GetString("Cat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Dog.
         /// </summary>
         public static string Dog {
             get {
                 return ResourceManager.GetString("Dog", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Mouse.
+        /// </summary>
+        public static string Mouse {
+            get {
+                return ResourceManager.GetString("Mouse", resourceCulture);
             }
         }
         
@@ -146,6 +175,15 @@ namespace ImageCards.Resources {
         public static string ResourceLanguage {
             get {
                 return ResourceManager.GetString("ResourceLanguage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Turtle.
+        /// </summary>
+        public static string Turtle {
+            get {
+                return ResourceManager.GetString("Turtle", resourceCulture);
             }
         }
     }

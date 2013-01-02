@@ -144,8 +144,12 @@
 
             &lt;p&gt;Attributions:&lt;/p&gt;
             &lt;p&gt;
-                Martin L(EuroMagic), Magnus Bråth, elizabeth tersigni(ETersigni), John Talbot(jpctalbot),
-                NoiseCollector, mich3d.
+                Magnus Bråth, anaa yoo, ilker ender, Phalinn Ooi, 
+Christopher Schmidt, Bart Rousseau, paddynapper, 
+flickrfavorites, Taro Taylor, Stephen Michael Barnett, 
+Mark Bray, Chris Isherwood, Martin L(EuroMagic), 
+elizabeth tersigni(ETersigni), John Talbot(jpctalbot),
+FreeSound.org, SoundBible.com, SoundJax.com, FreeSFX.co.uk, quijano.net
             &lt;/p&gt;
             &lt;p&gt;All content used under Creative Commons Attribution. For complete attribution, visit brain.no&lt;/p&gt;</value>
   </data>
@@ -154,5 +158,17 @@
   </data>
   <data name="Dog" xml:space="preserve">
     <value>Dog</value>
+  </data>
+  <data name="Bird" xml:space="preserve">
+    <value>Bird</value>
+  </data>
+  <data name="Cat" xml:space="preserve">
+    <value>Cat</value>
+  </data>
+  <data name="Mouse" xml:space="preserve">
+    <value>Mouse</value>
+  </data>
+  <data name="Turtle" xml:space="preserve">
+    <value>Turtle</value>
   </data>
 </root>

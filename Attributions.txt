@@ -61,7 +61,25 @@ http://www.flickr.com/photos/laserstars/3086132328/
 
 Sounds Attributions
 
-dog01.wav: http://www.freesound.org/people/NoiseCollector/sounds/4912/
-dog02.wav: http://www.freesound.org/people/mich3d/sounds/24965/
-dog03.wav: http://www.freesound.org/people/NoiseCollector/sounds/4910/
+dog01.mp3: http://www.freesound.org/people/NoiseCollector/sounds/4912/
+dog02.mp3: http://www.freesound.org/people/mich3d/sounds/24965/
+dog03.mp3: http://www.freesound.org/people/NoiseCollector/sounds/4910/
+dog04.mp3: http://www.freesound.org/people/NoiseCollector/sounds/4910/
 
+bird01.mp3: http://soundbible.com/1862-Mallard-Duck-Quacking.html
+bird02.mp3: http://soundbible.com/1544-Parots-Talking.html
+bird03.mp3: http://soundbible.com/1850-Dove.html
+bird04.mp3: http://soundbible.com/1487-Eaglet-Bird-2.html
+
+mouse01.mp3: http://soundjax.com/mouse_sounds-1.html
+mouse02.mp3: http://www.freesfx.co.uk/sfx/mouse
+mouse03.mp3: http://soundjax.com/mouse_sounds-1.html
+
+cat01.mp3: http://soundbible.com/1954-Cat-Meow-2.html
+cat02.mp3: http://soundbible.com/1684-Cat-Meowing-2.html
+cat03.mp3: http://soundbible.com/1286-Kitten-Meow.html
+cat04.mp3: http://soundbible.com/1290-Cat-Meowing.html
+
+turtle01.mp3: http://www.quijano.net/tq/turtlesounds.html
+turtle02.mp3: http://www.quijano.net/tq/turtlesounds.html
+turtle03.mp3: http://www.quijano.net/tq/turtlesounds.html

@@ -71,14 +71,19 @@ $(function () {
 	    Initialize({
 	        "AppBarButtonText": "add",
 	        "ResourceLanguage": "en-US",
+	        "Turtle": "Turtle",
 	        "By": "by:",
 	        "Dog": "Dog",
-	        "About": "<p>For more games, visit www.brain.no</p>            <p>For your kids' protection, our apps for kids will not contain ads or links.</p>            <p>Attributions:</p>            <p>                Martin L(EuroMagic), Magnus Bråth, elizabeth tersigni(ETersigni), John Talbot(jpctalbot),                NoiseCollector, mich3d.            </p>            <p>All content used under Creative Commons Attribution. For complete attribution, visit brain.no</p>",
+	        "Cat": "Cat",
+	        "About": "<p>For more games, visit www.brain.no</p>            <p>For your kids' protection, our apps and games for kids will not contain ads or links.</p>            <p>Attributions:</p>            <p>                Martin L(EuroMagic), Magnus Bråth, elizabeth tersigni(ETersigni), John Talbot(jpctalbot),                NoiseCollector, mich3d.            </p>            <p>All content used under Creative Commons Attribution. For complete attribution, visit brain.no</p>",
+	        "Mouse": "Mouse",
 	        "AboutBox": "About Image Cards",
 	        "AppBarMenuItemText": "Menu Item",
 	        "ResourceFlowDirection": "LeftToRight",
-	        "ApplicationTitle": "IMAGE CARDS FOR KIDS"
-	    }, false);
+	        "ApplicationTitle": "IMAGE CARDS FOR KIDS",
+	        "Bird": "Bird"
+	    }
+        , false);
 	}
 
 });
@@ -208,24 +213,20 @@ function populateCards() {
 	cards[1] = new card(mainViewModel.Text().Dog(), "dog02");
 	cards[2] = new card(mainViewModel.Text().Dog(), "dog03");
 	cards[3] = new card(mainViewModel.Text().Dog(), "dog04");
-	//cards[0] = new card("", "dog01");
-	//cards[1] = new card("", "dog02");
-	//cards[2] = new card("", "dog03");
-	//cards[3] = new card("", "dog04");
-	cards[4] = new card("Cat", "cat01");
-	cards[5] = new card("Cat", "cat02");
-	cards[6] = new card("Cat", "cat03");
-	cards[7] = new card("Cat", "cat04");
-	cards[8] = new card("Bird", "bird01");
-	cards[9] = new card("Bird", "bird02");
-	cards[10] = new card("Bird", "bird03");
-	cards[11] = new card("Bird", "bird04");
-	cards[12] = new card("Mouse", "mouse01");
-	cards[13] = new card("Mouse", "mouse02");
-	cards[14] = new card("Mouse", "mouse03");
-	cards[15] = new card("Turtle", "turtle01");
-	cards[16] = new card("Turtle", "turtle02");
-	cards[17] = new card("Turtle", "turtle03");
+	cards[4] = new card(mainViewModel.Text().Cat(), "cat01");
+	cards[5] = new card(mainViewModel.Text().Cat(), "cat02");
+	cards[6] = new card(mainViewModel.Text().Cat(), "cat03");
+	cards[7] = new card(mainViewModel.Text().Cat(), "cat04");
+	cards[8] = new card(mainViewModel.Text().Bird(), "bird01");
+	cards[9] = new card(mainViewModel.Text().Bird(), "bird02");
+	cards[10] = new card(mainViewModel.Text().Bird(), "bird03");
+	cards[11] = new card(mainViewModel.Text().Bird(), "bird04");
+	cards[12] = new card(mainViewModel.Text().Mouse(), "mouse01");
+	cards[13] = new card(mainViewModel.Text().Mouse(), "mouse02");
+	cards[14] = new card(mainViewModel.Text().Mouse(), "mouse03");
+	cards[15] = new card(mainViewModel.Text().Turtle(), "turtle01");
+	cards[16] = new card(mainViewModel.Text().Turtle(), "turtle02");
+	cards[17] = new card(mainViewModel.Text().Turtle(), "turtle03");
 
 	arrayShuffle(cards);
 
