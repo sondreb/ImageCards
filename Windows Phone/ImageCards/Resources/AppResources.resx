@@ -140,7 +140,7 @@
   </data>
   <data name="About" xml:space="preserve">
     <value>&lt;p&gt;For more games, visit www.brain.no&lt;/p&gt;
-            &lt;p&gt;For your kids' protection, our apps for kids will not contain ads or links.&lt;/p&gt;
+            &lt;p&gt;For your kids' protection, our apps and games for kids will not contain ads or links.&lt;/p&gt;
 
             &lt;p&gt;Attributions:&lt;/p&gt;
             &lt;p&gt;
@@ -151,5 +151,8 @@
   </data>
   <data name="AboutBox" xml:space="preserve">
     <value>About Image Cards</value>
+  </data>
+  <data name="Dog" xml:space="preserve">
+    <value>Dog</value>
   </data>
 </root>

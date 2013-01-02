@@ -152,4 +152,7 @@
   <data name="AboutBox" xml:space="preserve">
     <value>Om Bildekort</value>
   </data>
+  <data name="Dog" xml:space="preserve">
+    <value>Hund</value>
+  </data>
 </root>

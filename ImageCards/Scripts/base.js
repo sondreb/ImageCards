@@ -67,12 +67,23 @@ $(function () {
 	//});
 
 	// If the external host is not available, we will make sure to run Initialize on our own.
-	if (phone == null || window.external.notify == null) {
-		Initialize();
+	if (phone == null) {
+	    Initialize({
+	        "AppBarButtonText": "add",
+	        "ResourceLanguage": "en-US",
+	        "By": "by:",
+	        "Dog": "Dog",
+	        "About": "<p>For more games, visit www.brain.no</p>            <p>For your kids' protection, our apps for kids will not contain ads or links.</p>            <p>Attributions:</p>            <p>                Martin L(EuroMagic), Magnus Bråth, elizabeth tersigni(ETersigni), John Talbot(jpctalbot),                NoiseCollector, mich3d.            </p>            <p>All content used under Creative Commons Attribution. For complete attribution, visit brain.no</p>",
+	        "AboutBox": "About Image Cards",
+	        "AppBarMenuItemText": "Menu Item",
+	        "ResourceFlowDirection": "LeftToRight",
+	        "ApplicationTitle": "IMAGE CARDS FOR KIDS"
+	    }, false);
 	}
+
 });
 
-function Initialize(text)
+function Initialize(text, isJSON)
 {
 	// Parse text resources before viewmodels.
 	//if (text != null) {
@@ -86,14 +97,24 @@ function Initialize(text)
 	//}
 
 	// Create the view model and apply bindings.
-	var vm = new mainViewModel();
+    var vm = new mainViewModel();
 
-	// Parse the text resources
-	vm.Text = ko.mapping.fromJSON(text);
+    // Define the global MainViewModel property.
+    mainViewModel = vm;
 
-	mainViewModel = vm;
+    // Parse the text resources,  needs to be run before populateCards().
+    if (isJSON == null)
+    {
+        mainViewModel.Text(ko.mapping.fromJSON(text));
+    }
+    else
+    {
+        mainViewModel.Text(ko.mapping.fromJS(text));
+    }
+    
+    mainViewModel.Cards = ko.observableArray(populateCards());
 
-	ko.applyBindings(vm, document.body);
+    ko.applyBindings(mainViewModel, document.body);
 }
 
 
@@ -183,10 +204,14 @@ function changeTheme(theme)
 function populateCards() {
 	var cards = new Array();
 
-	cards[0] = new card("Dog", "dog01");
-	cards[1] = new card("Dog", "dog02");
-	cards[2] = new card("Dog", "dog03");
-	cards[3] = new card("Dog", "dog04");
+	cards[0] = new card(mainViewModel.Text().Dog(), "dog01");
+	cards[1] = new card(mainViewModel.Text().Dog(), "dog02");
+	cards[2] = new card(mainViewModel.Text().Dog(), "dog03");
+	cards[3] = new card(mainViewModel.Text().Dog(), "dog04");
+	//cards[0] = new card("", "dog01");
+	//cards[1] = new card("", "dog02");
+	//cards[2] = new card("", "dog03");
+	//cards[3] = new card("", "dog04");
 	cards[4] = new card("Cat", "cat01");
 	cards[5] = new card("Cat", "cat02");
 	cards[6] = new card("Cat", "cat03");
@@ -218,12 +243,13 @@ function arrayShuffle(theArray) {
 	}
 };
 
-var mainViewModel = function () {
+var mainViewModel = function (text) {
 	var self = this;
 
 	self.PreviousCard = null;
-	self.Cards = ko.observableArray(populateCards());
+
 	self.Text = ko.observable();
+	self.Cards = ko.observableArray();
 	self.Theme = ko.observable("Dark");
 
 	self.LogoUrl = ko.computed(function () {

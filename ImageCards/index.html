@@ -36,7 +36,7 @@
     <div id="gameboard">
 
         <!--<img class="brain" src="Assets/brain.png" />-->
-        <h1 data-bind="text: Text.ApplicationTitle"></h1>
+        <h1 data-bind="text: Text().ApplicationTitle"></h1>
 
         <ul class="flex" data-bind="foreach: Cards">
             <li class="tile_narrow tile animated" data-bind="click: Select, style: { 'background-image': Url() }">
@@ -50,7 +50,7 @@
             </div>
         </div>-->
 
-        <div class="tile_wide" data-bind="click: About"><span data-bind="text: Text.AboutBox"></span></div>
+        <div class="tile_wide" data-bind="click: About"><span data-bind="text: Text().AboutBox"></span></div>
     </div>
 
     <video style="display: none;"></video>
@@ -60,12 +60,12 @@
         <div>
             <img data-bind="click: About, attr: { src: BackIconUrl }, style: { 'background-image': BackIconBackgroundUrl() }" class="icon" />
 
-            <h1 data-bind="text: Text.ApplicationTitle"></h1>
+            <h1 data-bind="text: Text().ApplicationTitle"></h1>
 
-            <p data-bind="text: Text.By"></p>
+            <p data-bind="text: Text().By"></p>
             <img data-bind="attr: {src: LogoUrl}" />
 
-            <span data-bind="html: Text.About"></span>
+            <span data-bind="html: Text().About"></span>
 
         </div>
     </div>

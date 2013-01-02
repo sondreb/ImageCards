@@ -62,7 +62,7 @@ namespace ImageCards.Resources {
         
         /// <summary>
         ///   Looks up a localized string similar to &lt;p&gt;For more games, visit www.brain.no&lt;/p&gt;
-        ///            &lt;p&gt;For your kids&apos; protection, our apps for kids will not contain ads or links.&lt;/p&gt;
+        ///            &lt;p&gt;For your kids&apos; protection, our apps and games for kids will not contain ads or links.&lt;/p&gt;
         ///
         ///            &lt;p&gt;Attributions:&lt;/p&gt;
         ///            &lt;p&gt;
@@ -119,6 +119,15 @@ namespace ImageCards.Resources {
         public static string By {
             get {
                 return ResourceManager.GetString("By", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Dog.
+        /// </summary>
+        public static string Dog {
+            get {
+                return ResourceManager.GetString("Dog", resourceCulture);
             }
         }
         
