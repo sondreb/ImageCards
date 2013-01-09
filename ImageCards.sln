@@ -3,6 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DAFFE630-E474-4AE5-8C7C-5077C57985D3}"
 	ProjectSection(SolutionItems) = preProject
+		App Store.txt = App Store.txt
 		Attributions.txt = Attributions.txt
 		License.txt = License.txt
 		ReadMe.txt = ReadMe.txt

@@ -1,11 +1,9 @@
 ﻿/// <reference path="_references.js" />
 
 var previousCard = null;
-
+var phone = navigator.userAgent.match(/Windows Phone/i);
 
 $(function () {
-
-	var phone = navigator.userAgent.match(/Windows Phone/i);
 
 	// Notify the app host that we are running the onload operation.
 	// This will ensure text resources are loaded.
@@ -50,6 +48,11 @@ $(function () {
 	}
 
 });
+
+function BackButton()
+{
+    mainViewModel.CloseDialog();
+}
 
 function Initialize(text, isJSON)
 {
@@ -210,14 +213,33 @@ var mainViewModel = function (text) {
 		return "url(Assets/Icons/" + self.Theme() + "/basecircle.png)";
 	}, self);
 
+	self.CloseDialog = function ()
+	{
+	    if ($("#about").is(":visible")) {
+	        self.About();
+	    }
+	}
+
 	self.About = function () {
-		if ($("#about").is(":visible")) {
+	    if ($("#about").is(":visible")) {
+
 			$("#about").hide();
 			$("#gameboard").fadeIn();
+
+			if (phone != null) {
+			    window.external.notify("closedialog");
+			}
+
 		}
-		else {
+	    else {
+
 			$("#gameboard").hide();
 			$("#about").fadeIn();
+
+			if (phone != null) {
+			    window.external.notify("opendialog");
+			}
+
 		}
 	}
 }

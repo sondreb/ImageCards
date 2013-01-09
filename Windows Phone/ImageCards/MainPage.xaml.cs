@@ -63,6 +63,13 @@ namespace ImageCards
                 case "onload":
                     OnLoad();
                     break;
+                case "opendialog":
+                    IsDialogVisible = true;
+                    break;
+                case "closedialog":
+                    IsDialogVisible = false;
+                    break;
+
             }
         }
 
@@ -70,6 +77,18 @@ namespace ImageCards
         {
             var text = Resource.RenderJson();
             Browser.InvokeScript("Initialize", text);
+        }
+
+        public bool IsDialogVisible { get; set; }
+
+        private void PhoneApplicationPage_BackKeyPress(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            if (IsDialogVisible)
+            {
+                e.Cancel = true;
+            }
+
+            var result = Browser.InvokeScript("BackButton");
         }
     }
 }
