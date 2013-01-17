@@ -37,9 +37,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Windows", "Windows", "{C983
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "iOS", "iOS", "{48B4F931-6E4A-4BBD-B95A-ADF975DC284A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageCards", "Windows Phone\ImageCards\ImageCards.csproj", "{EABE44A2-2A3A-4D56-90E4-D9B3ADA0AB14}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageCards", "Windows Phone\ImageCards.csproj", "{EABE44A2-2A3A-4D56-90E4-D9B3ADA0AB14}"
 EndProject
-Project("{262852C6-CD72-467D-83FE-5EEB1973A190}") = "ImageCards", "Windows\ImageCards\ImageCards.jsproj", "{D28535DA-2E76-4511-8529-8F6948521A3D}"
+Project("{262852C6-CD72-467D-83FE-5EEB1973A190}") = "ImageCards", "Windows\ImageCards.jsproj", "{D28535DA-2E76-4511-8529-8F6948521A3D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Images", "Images", "{15FD9B9E-756F-49F9-93BB-8CB8D19146B5}"
 	ProjectSection(SolutionItems) = preProject

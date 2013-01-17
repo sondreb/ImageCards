@@ -7,7 +7,7 @@
     <Language code="no" />
     <Language code="nb" />
   </Languages>
-  <App xmlns="" ProductID="{eabe44a2-2a3a-4d56-90e4-d9b3ada0ab14}" Title="Image Cards for Kids" RuntimeType="Silverlight" Version="1.0.0.2" Genre="apps.normal" Author="brain.no" Description="Simple and fun game for the smallest children. Displays tiles that turns around when touched, to reveal a photo, the name and plays a sound of different animals." Publisher="brain.no" PublisherID="{971d5b70-f6e8-46c2-88c4-6917ca3595c1}">
+  <App xmlns="" ProductID="{eabe44a2-2a3a-4d56-90e4-d9b3ada0ab14}" Title="Image Cards for Kids" RuntimeType="Silverlight" Version="1.0.0.3" Genre="apps.normal" Author="brain.no" Description="Simple and fun game for the smallest children. Displays tiles that turns around when touched, to reveal a photo, the name and plays a sound of different animals." Publisher="brain.no" PublisherID="{971d5b70-f6e8-46c2-88c4-6917ca3595c1}">
     <IconPath IsRelative="true" IsResource="false">Assets\ApplicationIcon.png</IconPath>
     <Capabilities>
       <Capability Name="ID_CAP_WEBBROWSERCOMPONENT" />

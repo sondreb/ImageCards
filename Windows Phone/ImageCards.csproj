@@ -124,160 +124,160 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="..\..\ImageCards\Assets\brain_dark.png">
+    <Content Include="..\ImageCards\Assets\brain_dark.png">
       <Link>Assets\brain_dark.png</Link>
     </Content>
-    <Content Include="..\..\ImageCards\Assets\brain_light.png">
+    <Content Include="..\ImageCards\Assets\brain_light.png">
       <Link>Assets\brain_light.png</Link>
     </Content>
-    <Content Include="..\..\ImageCards\Assets\Icons\Dark\back.png">
+    <Content Include="..\ImageCards\Assets\Icons\Dark\back.png">
       <Link>Assets\Icons\Dark\back.png</Link>
     </Content>
-    <Content Include="..\..\ImageCards\Assets\Icons\Dark\basecircle.png">
+    <Content Include="..\ImageCards\Assets\Icons\Dark\basecircle.png">
       <Link>Assets\Icons\Dark\basecircle.png</Link>
     </Content>
-    <Content Include="..\..\ImageCards\Assets\Icons\Light\back.png">
+    <Content Include="..\ImageCards\Assets\Icons\Light\back.png">
       <Link>Assets\Icons\Light\back.png</Link>
     </Content>
-    <Content Include="..\..\ImageCards\Assets\Icons\Light\basecircle.png">
+    <Content Include="..\ImageCards\Assets\Icons\Light\basecircle.png">
       <Link>Assets\Icons\Light\basecircle.png</Link>
     </Content>
-    <Content Include="..\..\ImageCards\Assets\Images\bird01.jpg">
+    <Content Include="..\ImageCards\Assets\Images\bird01.jpg">
       <Link>Assets\Images\bird01.jpg</Link>
     </Content>
-    <Content Include="..\..\ImageCards\Assets\Images\bird02.jpg">
+    <Content Include="..\ImageCards\Assets\Images\bird02.jpg">
       <Link>Assets\Images\bird02.jpg</Link>
     </Content>
-    <Content Include="..\..\ImageCards\Assets\Images\bird03.jpg">
+    <Content Include="..\ImageCards\Assets\Images\bird03.jpg">
       <Link>Assets\Images\bird03.jpg</Link>
     </Content>
-    <Content Include="..\..\ImageCards\Assets\Images\bird04.jpg">
+    <Content Include="..\ImageCards\Assets\Images\bird04.jpg">
       <Link>Assets\Images\bird04.jpg</Link>
     </Content>
-    <Content Include="..\..\ImageCards\Assets\Images\blank.png">
+    <Content Include="..\ImageCards\Assets\Images\blank.png">
       <Link>Assets\Images\blank.png</Link>
     </Content>
-    <Content Include="..\..\ImageCards\Assets\Images\cat01.jpg">
+    <Content Include="..\ImageCards\Assets\Images\cat01.jpg">
       <Link>Assets\Images\cat01.jpg</Link>
     </Content>
-    <Content Include="..\..\ImageCards\Assets\Images\cat02.jpg">
+    <Content Include="..\ImageCards\Assets\Images\cat02.jpg">
       <Link>Assets\Images\cat02.jpg</Link>
     </Content>
-    <Content Include="..\..\ImageCards\Assets\Images\cat03.jpg">
+    <Content Include="..\ImageCards\Assets\Images\cat03.jpg">
       <Link>Assets\Images\cat03.jpg</Link>
     </Content>
-    <Content Include="..\..\ImageCards\Assets\Images\cat04.jpg">
+    <Content Include="..\ImageCards\Assets\Images\cat04.jpg">
       <Link>Assets\Images\cat04.jpg</Link>
     </Content>
-    <Content Include="..\..\ImageCards\Assets\Images\dog01.jpg">
+    <Content Include="..\ImageCards\Assets\Images\dog01.jpg">
       <Link>Assets\Images\dog01.jpg</Link>
     </Content>
-    <Content Include="..\..\ImageCards\Assets\Images\dog02.jpg">
+    <Content Include="..\ImageCards\Assets\Images\dog02.jpg">
       <Link>Assets\Images\dog02.jpg</Link>
     </Content>
-    <Content Include="..\..\ImageCards\Assets\Images\dog03.jpg">
+    <Content Include="..\ImageCards\Assets\Images\dog03.jpg">
       <Link>Assets\Images\dog03.jpg</Link>
     </Content>
-    <Content Include="..\..\ImageCards\Assets\Images\dog04.jpg">
+    <Content Include="..\ImageCards\Assets\Images\dog04.jpg">
       <Link>Assets\Images\dog04.jpg</Link>
     </Content>
-    <Content Include="..\..\ImageCards\Assets\Images\mouse01.jpg">
+    <Content Include="..\ImageCards\Assets\Images\mouse01.jpg">
       <Link>Assets\Images\mouse01.jpg</Link>
     </Content>
-    <Content Include="..\..\ImageCards\Assets\Images\mouse02.jpg">
+    <Content Include="..\ImageCards\Assets\Images\mouse02.jpg">
       <Link>Assets\Images\mouse02.jpg</Link>
     </Content>
-    <Content Include="..\..\ImageCards\Assets\Images\mouse03.jpg">
+    <Content Include="..\ImageCards\Assets\Images\mouse03.jpg">
       <Link>Assets\Images\mouse03.jpg</Link>
     </Content>
-    <Content Include="..\..\ImageCards\Assets\Images\turtle01.jpg">
+    <Content Include="..\ImageCards\Assets\Images\turtle01.jpg">
       <Link>Assets\Images\turtle01.jpg</Link>
     </Content>
-    <Content Include="..\..\ImageCards\Assets\Images\turtle02.jpg">
+    <Content Include="..\ImageCards\Assets\Images\turtle02.jpg">
       <Link>Assets\Images\turtle02.jpg</Link>
     </Content>
-    <Content Include="..\..\ImageCards\Assets\Images\turtle03.jpg">
+    <Content Include="..\ImageCards\Assets\Images\turtle03.jpg">
       <Link>Assets\Images\turtle03.jpg</Link>
     </Content>
-    <Content Include="..\..\ImageCards\Assets\Sounds\bird01.mp3">
+    <Content Include="..\ImageCards\Assets\Sounds\bird01.mp3">
       <Link>Assets\Sounds\bird01.mp3</Link>
     </Content>
-    <Content Include="..\..\ImageCards\Assets\Sounds\bird02.mp3">
+    <Content Include="..\ImageCards\Assets\Sounds\bird02.mp3">
       <Link>Assets\Sounds\bird02.mp3</Link>
     </Content>
-    <Content Include="..\..\ImageCards\Assets\Sounds\bird03.mp3">
+    <Content Include="..\ImageCards\Assets\Sounds\bird03.mp3">
       <Link>Assets\Sounds\bird03.mp3</Link>
     </Content>
-    <Content Include="..\..\ImageCards\Assets\Sounds\bird04.mp3">
+    <Content Include="..\ImageCards\Assets\Sounds\bird04.mp3">
       <Link>Assets\Sounds\bird04.mp3</Link>
     </Content>
-    <Content Include="..\..\ImageCards\Assets\Sounds\cat01.mp3">
+    <Content Include="..\ImageCards\Assets\Sounds\cat01.mp3">
       <Link>Assets\Sounds\cat01.mp3</Link>
     </Content>
-    <Content Include="..\..\ImageCards\Assets\Sounds\cat02.mp3">
+    <Content Include="..\ImageCards\Assets\Sounds\cat02.mp3">
       <Link>Assets\Sounds\cat02.mp3</Link>
     </Content>
-    <Content Include="..\..\ImageCards\Assets\Sounds\cat03.mp3">
+    <Content Include="..\ImageCards\Assets\Sounds\cat03.mp3">
       <Link>Assets\Sounds\cat03.mp3</Link>
     </Content>
-    <Content Include="..\..\ImageCards\Assets\Sounds\cat04.mp3">
+    <Content Include="..\ImageCards\Assets\Sounds\cat04.mp3">
       <Link>Assets\Sounds\cat04.mp3</Link>
     </Content>
-    <Content Include="..\..\ImageCards\Assets\Sounds\dog01.mp3">
+    <Content Include="..\ImageCards\Assets\Sounds\dog01.mp3">
       <Link>Assets\Sounds\dog01.mp3</Link>
     </Content>
-    <Content Include="..\..\ImageCards\Assets\Sounds\dog02.mp3">
+    <Content Include="..\ImageCards\Assets\Sounds\dog02.mp3">
       <Link>Assets\Sounds\dog02.mp3</Link>
     </Content>
-    <Content Include="..\..\ImageCards\Assets\Sounds\dog03.mp3">
+    <Content Include="..\ImageCards\Assets\Sounds\dog03.mp3">
       <Link>Assets\Sounds\dog03.mp3</Link>
     </Content>
-    <Content Include="..\..\ImageCards\Assets\Sounds\dog04.mp3">
+    <Content Include="..\ImageCards\Assets\Sounds\dog04.mp3">
       <Link>Assets\Sounds\dog04.mp3</Link>
     </Content>
-    <Content Include="..\..\ImageCards\Assets\Sounds\mouse01.mp3">
+    <Content Include="..\ImageCards\Assets\Sounds\mouse01.mp3">
       <Link>Assets\Sounds\mouse01.mp3</Link>
     </Content>
-    <Content Include="..\..\ImageCards\Assets\Sounds\mouse02.mp3">
+    <Content Include="..\ImageCards\Assets\Sounds\mouse02.mp3">
       <Link>Assets\Sounds\mouse02.mp3</Link>
     </Content>
-    <Content Include="..\..\ImageCards\Assets\Sounds\mouse03.mp3">
+    <Content Include="..\ImageCards\Assets\Sounds\mouse03.mp3">
       <Link>Assets\Sounds\mouse03.mp3</Link>
     </Content>
-    <Content Include="..\..\ImageCards\Assets\Sounds\turtle01.mp3">
+    <Content Include="..\ImageCards\Assets\Sounds\turtle01.mp3">
       <Link>Assets\Sounds\turtle01.mp3</Link>
     </Content>
-    <Content Include="..\..\ImageCards\Assets\Sounds\turtle02.mp3">
+    <Content Include="..\ImageCards\Assets\Sounds\turtle02.mp3">
       <Link>Assets\Sounds\turtle02.mp3</Link>
     </Content>
-    <Content Include="..\..\ImageCards\Assets\Sounds\turtle03.mp3">
+    <Content Include="..\ImageCards\Assets\Sounds\turtle03.mp3">
       <Link>Assets\Sounds\turtle03.mp3</Link>
     </Content>
-    <Content Include="..\..\ImageCards\index.html">
+    <Content Include="..\ImageCards\index.html">
       <Link>index.html</Link>
     </Content>
-    <Content Include="..\..\ImageCards\Scripts\app.js">
+    <Content Include="..\ImageCards\Scripts\app.js">
       <Link>Scripts\app.js</Link>
     </Content>
-    <Content Include="..\..\ImageCards\Scripts\base.js">
+    <Content Include="..\ImageCards\Scripts\base.js">
       <Link>Scripts\base.js</Link>
     </Content>
-    <Content Include="..\..\ImageCards\Scripts\jquery-1.8.3.js">
+    <Content Include="..\ImageCards\Scripts\jquery-1.8.3.js">
       <Link>Scripts\jquery-1.8.3.js</Link>
     </Content>
-    <Content Include="..\..\ImageCards\Scripts\knockout-2.2.0.js">
+    <Content Include="..\ImageCards\Scripts\knockout-2.2.0.js">
       <Link>Scripts\knockout-2.2.0.js</Link>
     </Content>
-    <Content Include="..\..\ImageCards\Scripts\knockout.mapping-latest.js">
+    <Content Include="..\ImageCards\Scripts\knockout.mapping-latest.js">
       <Link>Scripts\knockout.mapping-latest.js</Link>
     </Content>
-    <Content Include="..\..\ImageCards\Scripts\_references.js">
+    <Content Include="..\ImageCards\Scripts\_references.js">
       <Link>Scripts\_references.js</Link>
     </Content>
-    <Content Include="..\..\ImageCards\Styles\app.css">
+    <Content Include="..\ImageCards\Styles\app.css">
       <Link>Styles\app.css</Link>
     </Content>
-    <Content Include="..\..\ImageCards\Styles\base.css">
+    <Content Include="..\ImageCards\Styles\base.css">
       <Link>Styles\base.css</Link>
     </Content>
     <Content Include="Assets\AlignmentGrid.png" />

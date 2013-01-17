@@ -2,6 +2,11 @@ Simple and fun game for the youngest children. Displays tiles that turns around 
 
 Does not contain any ads or links, to ensure the safety for your children. Perfect game to place on the Kids Corner!
 
+Releases
+
+1.0.0.3 - More cards, more different kinds of animals.
+
+1.0.0.2 - First released version.
 
 Image Cards
 Animal images

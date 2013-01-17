@@ -53,31 +53,31 @@
     <AppxManifest Include="package.appxmanifest">
       <SubType>Designer</SubType>
     </AppxManifest>
-    <Content Include="..\..\ImageCards\Assets\logo.jpg">
+    <Content Include="..\ImageCards\Assets\logo.jpg">
       <Link>Assets\logo.jpg</Link>
     </Content>
-    <Content Include="..\..\ImageCards\Assets\smallogo.jpg">
+    <Content Include="..\ImageCards\Assets\smallogo.jpg">
       <Link>Assets\smallogo.jpg</Link>
     </Content>
-    <Content Include="..\..\ImageCards\Assets\storelogo.jpg">
+    <Content Include="..\ImageCards\Assets\storelogo.jpg">
       <Link>Assets\storelogo.jpg</Link>
     </Content>
-    <Content Include="..\..\ImageCards\index.html">
+    <Content Include="..\ImageCards\index.html">
       <Link>index.html</Link>
     </Content>
-    <Content Include="..\..\ImageCards\Scripts\base.js">
+    <Content Include="..\ImageCards\Scripts\base.js">
       <Link>Scripts\base.js</Link>
     </Content>
-    <Content Include="..\..\ImageCards\Scripts\jquery-1.8.3.js">
+    <Content Include="..\ImageCards\Scripts\jquery-1.8.3.js">
       <Link>Scripts\jquery-1.8.3.js</Link>
     </Content>
-    <Content Include="..\..\ImageCards\Scripts\knockout-2.2.0.js">
+    <Content Include="..\ImageCards\Scripts\knockout-2.2.0.js">
       <Link>Scripts\knockout-2.2.0.js</Link>
     </Content>
-    <Content Include="..\..\ImageCards\Scripts\knockout.mapping-latest.js">
+    <Content Include="..\ImageCards\Scripts\knockout.mapping-latest.js">
       <Link>Scripts\knockout.mapping-latest.js</Link>
     </Content>
-    <Content Include="..\..\ImageCards\Styles\base.css">
+    <Content Include="..\ImageCards\Styles\base.css">
       <Link>Styles\base.css</Link>
     </Content>
     <Content Include="Assets\logo.png" />
