@@ -12,18 +12,20 @@ namespace ImageCards
 {
     public partial class MainPage : PhoneApplicationPage
     {
-        // Url of Home page
         private string MainUri = "/index.html";
 
-        // Constructor
         public MainPage()
         {
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Indicates if any dialog is visible. Used by the back button logic.
+        /// </summary>
+        public bool IsDialogVisible { get; set; }
+
         private void Browser_Loaded(object sender, RoutedEventArgs e)
         {
-            // Add your URL here
             Browser.Navigate(new Uri(MainUri, UriKind.Relative));
         }
 
@@ -78,8 +80,6 @@ namespace ImageCards
             var text = Resource.RenderJson();
             Browser.InvokeScript("Initialize", text);
         }
-
-        public bool IsDialogVisible { get; set; }
 
         private void PhoneApplicationPage_BackKeyPress(object sender, System.ComponentModel.CancelEventArgs e)
         {

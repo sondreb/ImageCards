@@ -239,7 +239,6 @@ var mainViewModel = function (text) {
 			if (phone != null) {
 			    window.external.notify("opendialog");
 			}
-
 		}
 	}
 }
